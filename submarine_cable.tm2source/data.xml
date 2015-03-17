@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">-49.043,32.3985,3</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"countries","description":"countries","fields":{"scalerank":"Number","featurecla":"String","LABELRANK":"Number","SOVEREIGNT":"String","SOV_A3":"String","ADM0_DIF":"Number","LEVEL":"Number","TYPE":"String","ADMIN":"String","ADM0_A3":"String","GEOU_DIF":"Number","GEOUNIT":"String","GU_A3":"String","SU_DIF":"Number","SUBUNIT":"String","SU_A3":"String","BRK_DIFF":"Number","NAME":"String","NAME_LONG":"String","BRK_A3":"String","BRK_NAME":"String","BRK_GROUP":"String","ABBREV":"String","POSTAL":"String","FORMAL_EN":"String","FORMAL_FR":"String","NOTE_ADM0":"String","NOTE_BRK":"String","NAME_SORT":"String","NAME_ALT":"String","MAPCOLOR7":"Number","MAPCOLOR8":"Number","MAPCOLOR9":"Number","MAPCOLOR13":"Number","POP_EST":"Number","GDP_MD_EST":"Number","POP_YEAR":"Number","LASTCENSUS":"Number","GDP_YEAR":"Number","ECONOMY":"String","INCOME_GRP":"String","WIKIPEDIA":"Number","FIPS_10_":"String","ISO_A2":"String","ISO_A3":"String","ISO_N3":"String","UN_A3":"String","WB_A2":"String","WB_A3":"String","WOE_ID":"Number","WOE_ID_EH":"Number","WOE_NOTE":"String","ADM0_A3_IS":"String","ADM0_A3_US":"String","ADM0_A3_UN":"Number","ADM0_A3_WB":"Number","CONTINENT":"String","REGION_UN":"String","SUBREGION":"String","REGION_WB":"String","NAME_LEN":"Number","LONG_LEN":"Number","ABBREV_LEN":"Number","TINY":"Number","HOMEPART":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">7</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+</Parameters>
+
+
+<Layer name="countries"
+  buffer-size="64"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/katie1/Documents/Github_repositories/CartoCSS_572/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
