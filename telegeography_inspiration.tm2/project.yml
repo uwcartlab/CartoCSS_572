@@ -10,9 +10,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -154.8413
-  - 80.1468
-  - 7
+  - 114.6094
+  - -22.5937
+  - 3
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
@@ -20,7 +20,7 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: ''
-source: "tmsource:///Users/katie1/Documents/Github_repositories/CartoCSS_572/submarine_cable.tm2source"
+source: "mapbox:///katiekowalsky.b01e76dc,katiekowalsky.4a6ac225,mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
   - labels.mss

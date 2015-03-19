@@ -10,7 +10,7 @@
 // Common Colors //
 @land: #F1D9BD;
 @water: #8F96A2;
-@red: #E58D6B;
+@red: #b05f3f;
 @blue: #8BA5A5;
 @yellow: #F2C74C;
 @gray: #B5A795;
@@ -23,27 +23,73 @@ font-directory: url("fonts/");
 }
 
 // Political boundaries //
-#admin[admin_level=2][maritime=0] {
+#countries {
    line-color: @black;
-   line-width: 1.5;
-   line-opacity: .5;
+   line-width: .25;
+   line-dasharray: 2,3;
+   line-opacity: 1;
    line-join: round;
     [zoom>=4] { 
-    line-opacity: .6;
-    line-width: 1.70;
+    line-dasharray: 1.5,3;
+    line-width: 1;
    }
    [zoom>=5] { 
-    line-opacity: .75;
+    line-dasharray: 1.5,3;
     line-width: 2;
    }
    [zoom>=8] { 
-    line-opacity: 1;
-    line-width: 2; 
+    line-dasharray: 3,4;
+    line-width: 3; 
   }
 }
 
+#continent[CONTINENT="Africa"]{
+      line-color: @red;
+      line-join: round;
+      line-cap: round;
+      line-width: 20;
+      line-opacity: .5;
+}
 
+#continent[CONTINENT="Europe"]{
+      line-color: @blue;
+      line-join: round;
+      line-cap: round;
+      line-width: 20;
+      line-opacity: .5;
+}
 
+#continent[CONTINENT="Asia"]{
+      line-color: @yellow;
+      line-join: round;
+      line-cap: round;
+      line-width: 20;
+      line-opacity: .5;
+}
+
+#continent[CONTINENT="North America"]{
+      line-color: @red;
+      line-join: round;
+      line-cap: round;
+      line-width: 20;
+      line-opacity: .5;
+}
+
+#continent[CONTINENT="South America"]{
+      line-color: @blue;
+      line-join: round;
+      line-cap: round;
+      line-width: 20;
+      line-opacity: .5;
+  
+#continent[CONTINENT="Australia"]{
+      line-color: @red;
+      line-join: round;
+      line-cap: round;
+      line-width: 20;
+      line-opacity: .5;
+}
+}
 // Places //
 
 

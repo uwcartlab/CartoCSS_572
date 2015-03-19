@@ -1,13 +1,13 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: ''
-  rev: ''
+  mapid: katiekowalsky.4a6ac225
+  rev: s-cd04a07c
   saveCenter: true
 attribution: ''
 center: 
-  - -49.043
-  - 32.3985
+  - -74.5313
+  - 23.564
   - 3
 description: ''
 Layer: 
@@ -87,4 +87,4 @@ Layer:
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
 maxzoom: 7
 minzoom: 0
-name: ''
+name: ne_countries
