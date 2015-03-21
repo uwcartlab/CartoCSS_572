@@ -26,12 +26,7 @@ font-directory: url("fonts/");
 // Water Features //
 #water {
   polygon-fill: @water;
-  polygon-opacity: .4;
-}
-
-#waterway[type='river']{
-  line-color: @water;
-  line-width:.5;
+  polygon-opacity: .45;
 }
 
 // Political boundaries //
@@ -45,7 +40,7 @@ font-directory: url("fonts/");
     polygon-fill: @pink;
     polygon-opacity: .5;
     ::insideline {
-      line-offset: -2;
+      line-offset: -1;
       line-color: @pink;
       line-opacity:.5;
       line-width: 4;
@@ -56,10 +51,10 @@ font-directory: url("fonts/");
     polygon-fill: @blue;
     polygon-opacity: .5;
     ::insideline {
-      line-offset: -2;
+      line-offset: -1;
       line-color: @blue;
       line-opacity:.5;
-      line-width: 3;
+      line-width: 4;
       line-join: round;
       line-cap: round;
     }}
@@ -67,10 +62,10 @@ font-directory: url("fonts/");
     polygon-fill: @yellow;
     polygon-opacity: .5;
     ::insideline {
-      line-offset: -2;
+      line-offset: -1;
       line-color: @yellow;
       line-opacity:.5;
-      line-width: 3;
+      line-width: 4;
       line-join: round;
       line-cap: round;
     }}
@@ -78,21 +73,16 @@ font-directory: url("fonts/");
     polygon-fill: @tan;
     polygon-opacity: .5;
     ::insideline {
-      line-offset: -2;
+      line-offset: -1;
       line-color: @tan;
       line-opacity:.5;
-      line-width: 3;
+      line-width: 4;
       line-join: round;
       line-cap: round;
     }}
 }
 
-// Places //
-
-
-
-
-
+// Waterlines //
 #buffer {
   line-color: @water;
   line-opacity:.4;

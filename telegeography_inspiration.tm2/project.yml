@@ -10,8 +10,8 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 7.207
-  - 8.7982
+  - 21.8848
+  - -2.4602
   - 4
 description: ''
 format: "png8:m=h"
@@ -19,8 +19,8 @@ interactivity_layer: ''
 layers: null
 maxzoom: 22
 minzoom: 0
-name: ''
-source: "mapbox:///katiekowalsky.8a66c984,katiekowalsky.4a6ac225,mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5"
+name: Telegeography_Political
+source: "mapbox:///katiekowalsky.8a66c984,katiekowalsky.4a6ac225,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
   - labels.mss
