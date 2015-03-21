@@ -5,6 +5,7 @@
 @sans: 'Crimson Roman';
 @sans_italic: 'Crimson Italic';
 @sans_bold: 'Crimson Bold';
+@country: 'Abril Fatface Regular';
 
 // Common Colors //
 @water: #507E97;
@@ -17,8 +18,20 @@
 
 Map { 
 background-color: @white;
-background-image: url("./textures/noisy_grid_@2x.png");
+background-image: url("./textures/grid6.png");
+background-image-opacity: .2;
 font-directory: url("fonts/");
+}
+
+// Water Features //
+#water {
+  polygon-fill: @water;
+  polygon-opacity: .4;
+}
+
+#waterway[type='river']{
+  line-color: @water;
+  line-width:.5;
 }
 
 // Political boundaries //
@@ -32,8 +45,10 @@ font-directory: url("fonts/");
     polygon-fill: @pink;
     polygon-opacity: .5;
     ::insideline {
+      line-offset: -2;
       line-color: @pink;
-      line-width: 5;
+      line-opacity:.5;
+      line-width: 4;
       line-join: round;
       line-cap: round;
     }}
@@ -41,8 +56,10 @@ font-directory: url("fonts/");
     polygon-fill: @blue;
     polygon-opacity: .5;
     ::insideline {
+      line-offset: -2;
       line-color: @blue;
-      line-width: 5;
+      line-opacity:.5;
+      line-width: 3;
       line-join: round;
       line-cap: round;
     }}
@@ -50,8 +67,10 @@ font-directory: url("fonts/");
     polygon-fill: @yellow;
     polygon-opacity: .5;
     ::insideline {
+      line-offset: -2;
       line-color: @yellow;
-      line-width: 5;
+      line-opacity:.5;
+      line-width: 3;
       line-join: round;
       line-cap: round;
     }}
@@ -59,8 +78,10 @@ font-directory: url("fonts/");
     polygon-fill: @tan;
     polygon-opacity: .5;
     ::insideline {
+      line-offset: -2;
       line-color: @tan;
-      line-width: 5;
+      line-opacity:.5;
+      line-width: 3;
       line-join: round;
       line-cap: round;
     }}
@@ -70,26 +91,22 @@ font-directory: url("fonts/");
 
 
 
-// Water Features //
-#water {
-  polygon-fill: @water;
-  polygon-opacity: .3;
-}
+
 
 #buffer {
   line-color: @water;
-  line-opacity:.75;
+  line-opacity:.4;
   line-width:1.3;
   [distance>.4]{
       line-width: 1;
-      line-opacity:.4;
+      line-opacity:.3;
    }
   [distance>1]{
       line-width: .75;
-      line-opacity:.3;
+      line-opacity:.2;
    }
   [distance>2]{
       line-width: .5;
-      line-opacity:.2;
+      line-opacity:.15;
    }
 }
