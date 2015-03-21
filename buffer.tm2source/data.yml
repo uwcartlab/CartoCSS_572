@@ -1,25 +1,25 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: katiekowalsky.b01e76dc
-  rev: s-348aa9aa
+  mapid: katiekowalsky.8a66c984
+  rev: s-d03aa7dc
   saveCenter: true
 attribution: ''
 center: 
-  - 0
-  - -3.1882
-  - 1
+  - -5.1416
+  - 22.3094
+  - 4
 description: ''
 Layer: 
-  - id: continent
+  - id: buffer
     Datasource: 
-      file: /Users/katie1/Documents/Github_repositories/CartoCSS_572/continents/continent.shp
+      file: /Users/katie1/Documents/Github_repositories/CartoCSS_572/buffer/buffer.shp
       type: shape
     description: ''
     fields: 
-      CONTINENT: String
+      distance: Number
     properties: 
-      "buffer-size": 8
+      "buffer-size": 6
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
 maxzoom: 6
 minzoom: 0

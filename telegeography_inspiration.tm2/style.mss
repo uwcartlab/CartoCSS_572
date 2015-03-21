@@ -2,94 +2,70 @@
 @name: '[name_en]';
 
 // Fonts //
-@sans: 'Tisa SC Offc Pro Medium';
-@sans_italic: 'Tisa SC Offc Pro Italic';
-@sans_bold: 'Tisa SC Offc Pro Bold';
-@continent: 'Mutlu  Ornamental';
+@sans: 'Crimson Roman';
+@sans_italic: 'Crimson Italic';
+@sans_bold: 'Crimson Bold';
 
 // Common Colors //
-@land: #F1D9BD;
-@water: #8F96A2;
-@red: #b05f3f;
-@blue: #8BA5A5;
-@yellow: #F2C74C;
-@gray: #B5A795;
+@water: #507E97;
+@pink: #D69492;
+@blue: #658E8E;
+@yellow: #CFAD5A;
+@tan: #C8B691;
 @black: #222;
 @white: #fff;
 
 Map { 
-background-color: @land; 
+background-color: @white;
+background-image: url("./textures/noisy_grid_@2x.png");
 font-directory: url("fonts/");
 }
 
 // Political boundaries //
-#countries {
-   line-color: @black;
-   line-width: .25;
-   line-dasharray: 2,3;
-   line-opacity: 1;
-   line-join: round;
-    [zoom>=4] { 
-    line-dasharray: 1.5,3;
-    line-width: 1;
-   }
-   [zoom>=5] { 
-    line-dasharray: 1.5,3;
-    line-width: 2;
-   }
-   [zoom>=8] { 
-    line-dasharray: 3,4;
-    line-width: 3; 
-  }
+#admin[admin_level=2][maritime=0]{
+    line-color: @black;
+    line-width: .5;
 }
 
-#continent[CONTINENT="Africa"]{
-      line-color: @red;
+#countries{
+  [MAPCOLOR7=1],[MAPCOLOR7=3]{
+    polygon-fill: @pink;
+    polygon-opacity: .5;
+    ::insideline {
+      line-color: @pink;
+      line-width: 5;
       line-join: round;
       line-cap: round;
-      line-width: 20;
-      line-opacity: .5;
-}
-
-#continent[CONTINENT="Europe"]{
+    }}
+  [MAPCOLOR7=4],[MAPCOLOR7=6]{
+    polygon-fill: @blue;
+    polygon-opacity: .5;
+    ::insideline {
       line-color: @blue;
+      line-width: 5;
       line-join: round;
       line-cap: round;
-      line-width: 20;
-      line-opacity: .5;
-}
-
-#continent[CONTINENT="Asia"]{
+    }}
+  [MAPCOLOR7=2]{
+    polygon-fill: @yellow;
+    polygon-opacity: .5;
+    ::insideline {
       line-color: @yellow;
+      line-width: 5;
       line-join: round;
       line-cap: round;
-      line-width: 20;
-      line-opacity: .5;
+    }}
+  [MAPCOLOR7=5],[MAPCOLOR7=7]{
+    polygon-fill: @tan;
+    polygon-opacity: .5;
+    ::insideline {
+      line-color: @tan;
+      line-width: 5;
+      line-join: round;
+      line-cap: round;
+    }}
 }
 
-#continent[CONTINENT="North America"]{
-      line-color: @red;
-      line-join: round;
-      line-cap: round;
-      line-width: 20;
-      line-opacity: .5;
-}
-
-#continent[CONTINENT="South America"]{
-      line-color: @blue;
-      line-join: round;
-      line-cap: round;
-      line-width: 20;
-      line-opacity: .5;
-  
-#continent[CONTINENT="Australia"]{
-      line-color: @red;
-      line-join: round;
-      line-cap: round;
-      line-width: 20;
-      line-opacity: .5;
-}
-}
 // Places //
 
 
@@ -97,4 +73,23 @@ font-directory: url("fonts/");
 // Water Features //
 #water {
   polygon-fill: @water;
+  polygon-opacity: .3;
+}
+
+#buffer {
+  line-color: @water;
+  line-opacity:.75;
+  line-width:1.3;
+  [distance>.4]{
+      line-width: 1;
+      line-opacity:.4;
+   }
+  [distance>1]{
+      line-width: .75;
+      line-opacity:.3;
+   }
+  [distance>2]{
+      line-width: .5;
+      line-opacity:.2;
+   }
 }

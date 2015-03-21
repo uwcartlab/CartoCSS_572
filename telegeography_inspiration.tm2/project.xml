@@ -1,67 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#f1d9bd" font-directory="fonts/">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#ffffff" background-image="./textures/noisy_grid_@2x.png" font-directory="fonts/">
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">114.6094,-22.5937,3</Parameter>
+  <Parameter name="center">7.6904,23.1202,4</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///katiekowalsky.b01e76dc,katiekowalsky.4a6ac225,mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///katiekowalsky.8a66c984,katiekowalsky.4a6ac225,mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
 
-<Style name="continent" filter-mode="first">
+<Style name="buffer" filter-mode="first">
   <Rule>
-    <Filter>([CONTINENT] = 'South America')</Filter>
-    <LineSymbolizer stroke="#8ba5a5" stroke-linejoin="round" stroke-linecap="round" stroke-width="20" stroke-opacity="0.5" />
+    <Filter>([distance] &gt; 2)</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-opacity="0.2" stroke="#507e97" />
   </Rule>
   <Rule>
-    <Filter>([CONTINENT] = 'North America')</Filter>
-    <LineSymbolizer stroke="#b05f3f" stroke-linejoin="round" stroke-linecap="round" stroke-width="20" stroke-opacity="0.5" />
+    <Filter>([distance] &gt; 1)</Filter>
+    <LineSymbolizer stroke-width="0.75" stroke-opacity="0.3" stroke="#507e97" />
   </Rule>
   <Rule>
-    <Filter>([CONTINENT] = 'Asia')</Filter>
-    <LineSymbolizer stroke="#f2c74c" stroke-linejoin="round" stroke-linecap="round" stroke-width="20" stroke-opacity="0.5" />
+    <Filter>([distance] &gt; 0.4)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.4" stroke="#507e97" />
   </Rule>
   <Rule>
-    <Filter>([CONTINENT] = 'Europe')</Filter>
-    <LineSymbolizer stroke="#8ba5a5" stroke-linejoin="round" stroke-linecap="round" stroke-width="20" stroke-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CONTINENT] = 'Africa')</Filter>
-    <LineSymbolizer stroke="#b05f3f" stroke-linejoin="round" stroke-linecap="round" stroke-width="20" stroke-opacity="0.5" />
+    <LineSymbolizer stroke="#507e97" stroke-opacity="0.75" stroke-width="1.3" />
   </Rule>
 </Style>
-<Layer name="continent"
+<Layer name="buffer"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>continent</StyleName>  </Layer>
+    <StyleName>buffer</StyleName>  </Layer>
 
+<Style name="countries-insideline" filter-mode="first">
+  <Rule>
+    <Filter>([MAPCOLOR7] = 7)</Filter>
+    <LineSymbolizer stroke="#c8b691" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([MAPCOLOR7] = 5)</Filter>
+    <LineSymbolizer stroke="#c8b691" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([MAPCOLOR7] = 2)</Filter>
+    <LineSymbolizer stroke="#cfad5a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([MAPCOLOR7] = 6)</Filter>
+    <LineSymbolizer stroke="#658e8e" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([MAPCOLOR7] = 4)</Filter>
+    <LineSymbolizer stroke="#658e8e" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([MAPCOLOR7] = 1)</Filter>
+    <LineSymbolizer stroke="#d69492" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([MAPCOLOR7] = 3)</Filter>
+    <LineSymbolizer stroke="#d69492" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+</Style>
 <Style name="countries" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <LineSymbolizer stroke-dasharray="3, 4" stroke-width="3" stroke="#222222" stroke-opacity="1" stroke-linejoin="round" />
+    <Filter>([MAPCOLOR7] = 7)</Filter>
+    <PolygonSymbolizer fill="#c8b691" fill-opacity="0.5" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-dasharray="1.5, 3" stroke-width="2" stroke="#222222" stroke-opacity="1" stroke-linejoin="round" />
+    <Filter>([MAPCOLOR7] = 5)</Filter>
+    <PolygonSymbolizer fill="#c8b691" fill-opacity="0.5" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <LineSymbolizer stroke-dasharray="1.5, 3" stroke-width="1" stroke="#222222" stroke-opacity="1" stroke-linejoin="round" />
+    <Filter>([MAPCOLOR7] = 2)</Filter>
+    <PolygonSymbolizer fill="#cfad5a" fill-opacity="0.5" />
   </Rule>
   <Rule>
-    <MinScaleDenominator>50000000</MinScaleDenominator>
-    <LineSymbolizer stroke="#222222" stroke-width="0.25" stroke-dasharray="2, 3" stroke-opacity="1" stroke-linejoin="round" />
+    <Filter>([MAPCOLOR7] = 6)</Filter>
+    <PolygonSymbolizer fill="#658e8e" fill-opacity="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([MAPCOLOR7] = 4)</Filter>
+    <PolygonSymbolizer fill="#658e8e" fill-opacity="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([MAPCOLOR7] = 3)</Filter>
+    <PolygonSymbolizer fill="#d69492" fill-opacity="0.5" />
+  </Rule>
+  <Rule>
+    <Filter>([MAPCOLOR7] = 1)</Filter>
+    <PolygonSymbolizer fill="#d69492" fill-opacity="0.5" />
   </Rule>
 </Style>
 <Layer name="countries"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>countries</StyleName>  </Layer>
+    <StyleName>countries</StyleName>
+    <StyleName>countries-insideline</StyleName>  </Layer>
 
 <Layer name="landcover"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
@@ -85,7 +121,7 @@
 
 <Style name="water" filter-mode="first">
   <Rule>
-    <PolygonSymbolizer fill="#8f96a2" />
+    <PolygonSymbolizer fill="#507e97" fill-opacity="0.3" />
   </Rule>
 </Style>
 <Layer name="water"
@@ -121,9 +157,15 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
+<Style name="admin" filter-mode="first">
+  <Rule>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke="#222222" stroke-width="0.5" />
+  </Rule>
+</Style>
 <Layer name="admin"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>admin</StyleName>  </Layer>
 
 <Style name="country_label_line" filter-mode="first">
   <Rule>
@@ -138,68 +180,68 @@
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="16" halo-fill="#ffffff" halo-radius="3" face-name="Tisa SC Offc Pro Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" halo-fill="#ffffff" halo-radius="3" face-name="Crimson Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="14" halo-fill="#ffffff" halo-radius="3" face-name="Tisa SC Offc Pro Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer size="16" halo-fill="#ffffff" halo-radius="3" face-name="Tisa SC Offc Pro Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer size="14" halo-fill="#ffffff" halo-radius="3" face-name="Tisa SC Offc Pro Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Bold" fill="#222222" size="12" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="16" halo-fill="#ffffff" halo-radius="3" face-name="Tisa SC Offc Pro Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="14" halo-fill="#ffffff" halo-radius="3" face-name="Tisa SC Offc Pro Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Bold" fill="#222222" size="12" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" halo-fill="#ffffff" halo-radius="3" face-name="Crimson Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="16" halo-fill="#ffffff" halo-radius="3" face-name="Tisa SC Offc Pro Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" halo-fill="#ffffff" halo-radius="3" face-name="Crimson Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="14" halo-fill="#ffffff" halo-radius="3" face-name="Tisa SC Offc Pro Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" halo-fill="#ffffff" halo-radius="3" face-name="Crimson Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Bold" fill="#222222" size="12" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Crimson Bold" fill="#222222" size="12" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <Filter>([scalerank] = 3)</Filter>
+    <TextSymbolizer size="16" halo-fill="#ffffff" halo-radius="3" face-name="Crimson Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scalerank] = 3)</Filter>
+    <TextSymbolizer size="14" halo-fill="#ffffff" halo-radius="3" face-name="Crimson Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Bold" fill="#222222" size="12" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 3)</Filter>
+    <TextSymbolizer face-name="Crimson Bold" fill="#222222" size="12" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <Filter>([scalerank] &gt; 3)</Filter>
+    <TextSymbolizer size="16" halo-fill="#ffffff" halo-radius="3" face-name="Crimson Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scalerank] &gt; 3)</Filter>
+    <TextSymbolizer size="14" halo-fill="#ffffff" halo-radius="3" face-name="Crimson Bold" fill="#222222" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scalerank] &gt; 3)</Filter>
+    <TextSymbolizer face-name="Crimson Bold" fill="#222222" size="12" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <TextSymbolizer face-name="Crimson Bold" fill="#222222" size="12" halo-fill="rgba(255, 255, 255, 0.5)" halo-radius="2" halo-opacity="0.35" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="country_label"
@@ -214,109 +256,9 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="place_label" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'town')</Filter>
-    <TextSymbolizer size="20" face-name="Tisa SC Offc Pro Medium" fill="#333333" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'town')</Filter>
-    <TextSymbolizer size="16" face-name="Tisa SC Offc Pro Medium" fill="#333333" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'town')</Filter>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Medium" fill="#333333" opacity="0" size="14" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'city')</Filter>
-    <TextSymbolizer size="24" face-name="Tisa SC Offc Pro Bold" fill="#444444" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'city')</Filter>
-    <TextSymbolizer size="18" face-name="Tisa SC Offc Pro Bold" fill="#444444" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'city')</Filter>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Bold" fill="#444444" opacity="0" size="16" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'hamlet')</Filter>
-    <TextSymbolizer size="16" face-name="Tisa SC Offc Pro Medium" fill="#666666" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'hamlet')</Filter>
-    <TextSymbolizer size="14" face-name="Tisa SC Offc Pro Medium" fill="#666666" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'hamlet')</Filter>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Medium" fill="#666666" opacity="0" size="12" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'neighbourhood')</Filter>
-    <TextSymbolizer size="16" face-name="Tisa SC Offc Pro Medium" fill="#666666" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'neighbourhood')</Filter>
-    <TextSymbolizer size="14" face-name="Tisa SC Offc Pro Medium" fill="#666666" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'neighbourhood')</Filter>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Medium" fill="#666666" opacity="0" size="12" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'suburb')</Filter>
-    <TextSymbolizer size="16" face-name="Tisa SC Offc Pro Medium" fill="#666666" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'suburb')</Filter>
-    <TextSymbolizer size="14" face-name="Tisa SC Offc Pro Medium" fill="#666666" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'suburb')</Filter>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Medium" fill="#666666" opacity="0" size="12" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'village')</Filter>
-    <TextSymbolizer size="18" face-name="Tisa SC Offc Pro Medium" fill="#444444" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'village')</Filter>
-    <TextSymbolizer size="14" face-name="Tisa SC Offc Pro Medium" fill="#444444" opacity="0" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([localrank] &lt;= 2) and ([type] = 'village')</Filter>
-    <TextSymbolizer face-name="Tisa SC Offc Pro Medium" fill="#444444" opacity="0" size="12" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-</Style>
 <Layer name="place_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>place_label</StyleName>  </Layer>
+      </Layer>
 
 <Layer name="water_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">

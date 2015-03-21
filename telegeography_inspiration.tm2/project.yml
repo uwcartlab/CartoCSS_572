@@ -10,9 +10,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 114.6094
-  - -22.5937
-  - 3
+  - 7.6904
+  - 23.1202
+  - 4
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
@@ -20,7 +20,7 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: ''
-source: "mapbox:///katiekowalsky.b01e76dc,katiekowalsky.4a6ac225,mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5"
+source: "mapbox:///katiekowalsky.8a66c984,katiekowalsky.4a6ac225,mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
   - labels.mss
