@@ -1,90 +1,36 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: katiekowalsky.4a6ac225
-  rev: s-cd04a07c
+  mapid: katiekowalsky.ef694aee
+  rev: s-12083ce9
   saveCenter: true
 attribution: ''
 center: 
-  - -74.5313
-  - 23.564
-  - 3
+  - 36.5625
+  - 11.8674
+  - 1
 description: ''
 Layer: 
-  - id: countries
+  - id: Cables
     Datasource: 
-      file: /Users/katie1/Documents/Github_repositories/CartoCSS_572/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp
+      file: /Users/katie1/Downloads/gregs_cable_map_v1.53/Cables.shp
       type: shape
-    description: countries
+    description: ''
     fields: 
-      ABBREV: String
-      ABBREV_LEN: Number
-      ADM0_A3: String
-      ADM0_A3_IS: String
-      ADM0_A3_UN: Number
-      ADM0_A3_US: String
-      ADM0_A3_WB: Number
-      ADM0_DIF: Number
-      ADMIN: String
-      BRK_A3: String
-      BRK_DIFF: Number
-      BRK_GROUP: String
-      BRK_NAME: String
-      CONTINENT: String
-      ECONOMY: String
-      featurecla: String
-      FIPS_10_: String
-      FORMAL_EN: String
-      FORMAL_FR: String
-      GDP_MD_EST: Number
-      GDP_YEAR: Number
-      GEOU_DIF: Number
-      GEOUNIT: String
-      GU_A3: String
-      HOMEPART: Number
-      INCOME_GRP: String
-      ISO_A2: String
-      ISO_A3: String
-      ISO_N3: String
-      LABELRANK: Number
-      LASTCENSUS: Number
-      LEVEL: Number
-      LONG_LEN: Number
-      MAPCOLOR13: Number
-      MAPCOLOR7: Number
-      MAPCOLOR8: Number
-      MAPCOLOR9: Number
-      NAME: String
-      NAME_ALT: String
-      NAME_LEN: Number
-      NAME_LONG: String
-      NAME_SORT: String
-      NOTE_ADM0: String
-      NOTE_BRK: String
-      POP_EST: Number
-      POP_YEAR: Number
-      POSTAL: String
-      REGION_UN: String
-      REGION_WB: String
-      scalerank: Number
-      SOV_A3: String
-      SOVEREIGNT: String
-      SU_A3: String
-      SU_DIF: Number
-      SUBREGION: String
-      SUBUNIT: String
-      TINY: Number
-      TYPE: String
-      UN_A3: String
-      WB_A2: String
-      WB_A3: String
-      WIKIPEDIA: Number
-      WOE_ID: Number
-      WOE_ID_EH: Number
-      WOE_NOTE: String
+      Id: Number
+      Capacity_G: Number
+      Distance_K: Number
+      InService: Number
+      Name: String
+      Notes: String
+      NotLive: Number
+      OverLand: Number
+      precise: Number
+      URL1: String
+      URL2: String
     properties: 
-      "buffer-size": 64
+      "buffer-size": 8
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
-maxzoom: 7
+maxzoom: 6
 minzoom: 0
-name: ne_countries
+name: ''

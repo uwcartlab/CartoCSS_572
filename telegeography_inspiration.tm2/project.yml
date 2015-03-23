@@ -10,8 +10,8 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 21.8848
-  - -2.4602
+  - -4.6582
+  - 38.9594
   - 4
 description: ''
 format: "png8:m=h"
@@ -20,7 +20,7 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: Telegeography_Political
-source: "mapbox:///katiekowalsky.8a66c984,katiekowalsky.4a6ac225,mapbox.mapbox-streets-v5"
+source: "mapbox:///katiekowalsky.8a66c984,katiekowalsky.4a6ac225,katiekowalsky.ef694aee,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
   - labels.mss

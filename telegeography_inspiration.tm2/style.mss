@@ -100,3 +100,7 @@ font-directory: url("fonts/");
       line-opacity:.15;
    }
 }
+
+#Cables {
+ line-width: 1.5;
+}
