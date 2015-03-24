@@ -102,5 +102,5 @@ font-directory: url("fonts/");
 }
 
 #Cables {
- line-width: 1.5;
+ //line-width: 1.5;
 }
