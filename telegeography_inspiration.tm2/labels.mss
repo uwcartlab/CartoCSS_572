@@ -25,12 +25,27 @@
   line-color: fadeout(@black,80%); 
 }
 
-#place_label[zoom>=4]{
-  [capital='4']{
-    text-name: @name;
-    text-face-name: @sans;
-  }
+// Display capital cities alongside stars.
+#place_label::capitals[type='city'][capital=2][zoom>=4]{ 
+  shield-file: url("img/dot.svg");
+  shield-name: @name;
+  shield-face-name: @sans;
+  shield-size: 14;
+  shield-fill: @black;
+  shield-unlock-image: true;
+  shield-line-spacing: -2;
+  // Fine-tune label positioning.
+  [ldir='E'] { shield-text-dx: 6; }
+  [ldir='W'] { shield-text-dx: -6; }
+  [ldir='N'] { shield-text-dy: -5; }
+  [ldir='S'] { shield-text-dy: 6; }
+  [ldir='NE'] { shield-text-dx: 3; shield-text-dy: -3; }
+  [ldir='SE'] { shield-text-dx: 3; shield-text-dy: 3; }
+  [ldir='SW'] { shield-text-dx: -3; shield-text-dy: 3; }
+  [ldir='NW'] { shield-text-dx: -3; shield-text-dy: -3; }
+  [zoom>=6] { shield-size: 16; } 
 }
+
 
 
 

@@ -86,7 +86,7 @@ font-directory: url("fonts/");
 #buffer {
   line-color: @water;
   line-opacity:.4;
-  line-width:1.3;
+  line-width:1.5;
   [distance>.4]{
       line-width: 1;
       line-opacity:.3;
