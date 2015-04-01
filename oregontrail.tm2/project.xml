@@ -5,10 +5,10 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-108.4488,47.494,9</Parameter>
+  <Parameter name="center">-97.9102,35.8534,4</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
-  <Parameter name="maxzoom">22</Parameter>
-  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="maxzoom">7</Parameter>
+  <Parameter name="minzoom">3</Parameter>
   <Parameter name="name"><![CDATA[oregon trail]]></Parameter>
   <Parameter name="source"><![CDATA[mapbox:///katiekowalsky.0fa04a37,katiekowalsky.e400dc40,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
@@ -40,7 +40,7 @@
 
 <Style name="LakeHexes" filter-mode="first">
   <Rule>
-    <PolygonSymbolizer fill="#0000ff" />
+    <PolygonSymbolizer fill="#0000ff" gamma="0.2" />
   </Rule>
 </Style>
 <Layer name="LakeHexes"
@@ -49,7 +49,7 @@
 
 <Style name="Sea" filter-mode="first">
   <Rule>
-    <PolygonSymbolizer fill="#0000ff" />
+    <PolygonPatternSymbolizer file="textures/grid2.png" opacity="0.75" />
   </Rule>
 </Style>
 <Layer name="Sea"
@@ -62,7 +62,37 @@
 
 <Style name="ne_10m_rivers_lake_centerlines" filter-mode="first">
   <Rule>
-    <LineSymbolizer stroke-width="2" stroke="#0000ff" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3, 3" />
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt; 4)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#0000ff" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1, 6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] &lt; 4)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#0000ff" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1, 5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([scalerank] &lt; 4)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#0000ff" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1, 4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt; 6)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#0000ff" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1, 6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] &lt; 6)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#0000ff" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1, 5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt; 8)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#0000ff" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1, 6" />
   </Rule>
 </Style>
 <Layer name="ne_10m_rivers_lake_centerlines"
@@ -118,9 +148,31 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
+<Style name="country_label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 4)</Filter>
+    <TextSymbolizer size="7" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 3)</Filter>
+    <TextSymbolizer size="8" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
+    <TextSymbolizer size="10" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer size="12" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
 <Layer name="country_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>country_label</StyleName>  </Layer>
 
 <Layer name="marine_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">

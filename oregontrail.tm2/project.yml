@@ -10,17 +10,18 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -108.4488
-  - 47.494
-  - 9
+  - -97.9102
+  - 35.8534
+  - 4
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null
-maxzoom: 22
-minzoom: 0
+maxzoom: 7
+minzoom: 3
 name: oregon trail
 source: "mapbox:///katiekowalsky.0fa04a37,katiekowalsky.e400dc40,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
+  - labels.mss
 template: ''
