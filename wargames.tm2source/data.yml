@@ -1,0 +1,77 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ''
+  rev: ''
+  saveCenter: true
+attribution: ''
+center: 
+  - 7.207
+  - -7.3625
+  - 3
+description: ''
+Layer: 
+  - id: Admin0_Polygons
+    Datasource: 
+      file: /Users/katie1/Downloads/wargames-shp/shp/Admin0_Polygons.shp
+      type: shape
+    description: ''
+    fields: 
+      ABBREV: String
+      ADM0_A3: String
+      ADM0_DIF: Number
+      ADMIN: String
+      GEOU_DIF: Number
+      GEOUNIT: String
+      GU_A3: String
+      ISO_A2: String
+      ISO_A3: String
+      ISO_N3: Number
+      Name: String
+      NAME_1: String
+      NAME_FORMA: String
+      OBJECTID: Number
+      POSTAL: String
+      SOV_A3: String
+      SOVEREIGNT: String
+      SU_A3: String
+      SU_DIF: Number
+      SUBUNIT: String
+      TERR_: String
+      TYPE: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=gall +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs
+  - id: LakeHexes
+    Datasource: 
+      file: /Users/katie1/Downloads/wargames-shp/shp/LakeHexes.shp
+      type: shape
+    description: ''
+    fields: 
+      OBJECTID: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=gall +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs
+  - id: Sea
+    Datasource: 
+      file: /Users/katie1/Downloads/wargames-shp/shp/Sea.shp
+      type: shape
+    description: ''
+    fields: 
+      Id: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=gall +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs
+  - id: LandHexes
+    Datasource: 
+      file: /Users/katie1/Downloads/wargames-shp/shp/LandHexes.shp
+      type: shape
+    description: ''
+    fields: 
+      OBJECTID: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=gall +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs
+maxzoom: 8
+minzoom: 0
+name: ''

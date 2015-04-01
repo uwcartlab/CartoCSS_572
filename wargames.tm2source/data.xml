@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">7.207,-7.3625,3</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"Admin0_Polygons","description":"","fields":{"OBJECTID":"Number","Name":"String","SOVEREIGNT":"String","SOV_A3":"String","ADM0_DIF":"Number","TYPE":"String","ADMIN":"String","ADM0_A3":"String","GEOU_DIF":"Number","GEOUNIT":"String","GU_A3":"String","SU_DIF":"Number","SUBUNIT":"String","SU_A3":"String","NAME_1":"String","ABBREV":"String","POSTAL":"String","NAME_FORMA":"String","TERR_":"String","ISO_A2":"String","ISO_A3":"String","ISO_N3":"Number"}},{"id":"LakeHexes","description":"","fields":{"OBJECTID":"Number"}},{"id":"Sea","description":"","fields":{"Id":"Number"}},{"id":"LandHexes","description":"","fields":{"OBJECTID":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">8</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+</Parameters>
+
+
+<Layer name="Admin0_Polygons"
+  buffer-size="8"
+  srs="+proj=gall +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/katie1/Downloads/wargames-shp/shp/Admin0_Polygons.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="LakeHexes"
+  buffer-size="8"
+  srs="+proj=gall +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/katie1/Downloads/wargames-shp/shp/LakeHexes.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Sea"
+  buffer-size="8"
+  srs="+proj=gall +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/katie1/Downloads/wargames-shp/shp/Sea.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="LandHexes"
+  buffer-size="8"
+  srs="+proj=gall +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/katie1/Downloads/wargames-shp/shp/LandHexes.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
