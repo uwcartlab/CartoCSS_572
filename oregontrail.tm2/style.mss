@@ -9,31 +9,43 @@
 // Common Colors //
 @white: #fff;
 @black: #000;
+@blue: blue;
 
 Map { background-color: @white; }
 
 #Admin0_Polygons {
+  line-color: @black;
+  [zoom=1]{
+    line-width: .5;
+  }
+  [zoom=2]{
+    line-width: .75; 
+  }
+  [zoom=3]{
+    line-width: 1; 
+  }
    line-width: 1.5;
-   line-color: @black;
 }
 
 #Sea {
-   polygon-pattern-file: url("textures/grid2.png");
-    
+   //polygon-pattern-file: url("textures/grid2.png");   
+  polygon-fill: @blue;
 }
 
 #LakeHexes {
-  polygon-pattern-file: url("textures/grid2.png");
+  polygon-fill: @blue;
+ //polygon-pattern-file: url("textures/grid2.png");
   //::outline {
   //    line-width: .75;
   //    line-color: @black;
   // }
 }
 
-#waterway [type='river'][zoom>=4]{ 
-    line-color: blue;
-    line-width: 10; 
-    line-dasharray: 1,1;
+#ne_10m_rivers_lake_centerlines {
+  line-width: 2;
+  line-color: @blue;
+  line-cap: round;
+  line-join: round;
+  line-dasharray: 3,3;
 }
-
 

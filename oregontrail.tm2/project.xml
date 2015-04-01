@@ -5,29 +5,77 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-109.6436,32.9165,4</Parameter>
+  <Parameter name="center">-108.4488,47.494,9</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[oregon trail]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v5,katiekowalsky.0fa04a37]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///katiekowalsky.0fa04a37,katiekowalsky.e400dc40,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
+
+<Style name="Admin0_Polygons" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.75" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>500000000</MaxScaleDenominator>
+    <MinScaleDenominator>200000000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.5" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke="#000000" stroke-width="1.5" />
+  </Rule>
+</Style>
+<Layer name="Admin0_Polygons"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Admin0_Polygons</StyleName>  </Layer>
+
+<Style name="LakeHexes" filter-mode="first">
+  <Rule>
+    <PolygonSymbolizer fill="#0000ff" />
+  </Rule>
+</Style>
+<Layer name="LakeHexes"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>LakeHexes</StyleName>  </Layer>
+
+<Style name="Sea" filter-mode="first">
+  <Rule>
+    <PolygonSymbolizer fill="#0000ff" />
+  </Rule>
+</Style>
+<Layer name="Sea"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Sea</StyleName>  </Layer>
+
+<Layer name="LandHexes"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="ne_10m_rivers_lake_centerlines" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke="#0000ff" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3, 3" />
+  </Rule>
+</Style>
+<Layer name="ne_10m_rivers_lake_centerlines"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>ne_10m_rivers_lake_centerlines</StyleName>  </Layer>
 
 <Layer name="landuse"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="waterway" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
-    <LineSymbolizer stroke="#0000ff" stroke-width="10" stroke-dasharray="1, 1" />
-  </Rule>
-</Style>
 <Layer name="waterway"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>waterway</StyleName>  </Layer>
+      </Layer>
 
 <Layer name="water"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
@@ -103,37 +151,6 @@
       </Layer>
 
 <Layer name="housenum_label"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
-
-<Style name="Admin0_Polygons" filter-mode="first">
-  <Rule>
-    <LineSymbolizer stroke-width="1.5" stroke="#000000" />
-  </Rule>
-</Style>
-<Layer name="Admin0_Polygons"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Admin0_Polygons</StyleName>  </Layer>
-
-<Style name="LakeHexes" filter-mode="first">
-  <Rule>
-    <PolygonPatternSymbolizer file="textures/grid2.png" />
-  </Rule>
-</Style>
-<Layer name="LakeHexes"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>LakeHexes</StyleName>  </Layer>
-
-<Style name="Sea" filter-mode="first">
-  <Rule>
-    <PolygonPatternSymbolizer file="textures/grid2.png" />
-  </Rule>
-</Style>
-<Layer name="Sea"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Sea</StyleName>  </Layer>
-
-<Layer name="LandHexes"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 

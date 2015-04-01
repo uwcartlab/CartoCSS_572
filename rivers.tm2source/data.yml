@@ -1,0 +1,32 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: katiekowalsky.e400dc40
+  rev: s-8e359c42
+  saveCenter: true
+attribution: ''
+center: 
+  - -78.5742
+  - 22.1874
+  - 3
+description: ''
+Layer: 
+  - id: ne_10m_rivers_lake_centerlines
+    Datasource: 
+      file: /Users/katie1/Downloads/ne_10m_rivers_lake_centerlines/ne_10m_rivers_lake_centerlines.shp
+      type: shape
+    description: ''
+    fields: 
+      dissolve: String
+      featurecla: String
+      name: String
+      name_alt: String
+      note: String
+      rivernum: Number
+      scalerank: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 7
+minzoom: 1
+name: rivers
