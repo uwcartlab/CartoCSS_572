@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-95.2734,34.8859,4</Parameter>
+  <Parameter name="center">-79.4531,19.3941,4</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">7</Parameter>
   <Parameter name="minzoom">3</Parameter>
@@ -152,81 +152,81 @@
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([scalerank] = 5)</Filter>
-    <TextSymbolizer size="12" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([scalerank] = 5)</Filter>
-    <TextSymbolizer size="8" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="10" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([scalerank] = 4)</Filter>
-    <TextSymbolizer size="13" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="13" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([scalerank] = 4)</Filter>
-    <TextSymbolizer size="10" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1.25" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 4)</Filter>
-    <TextSymbolizer size="7" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="7" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="14" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2.5" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="12" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="8" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="8" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="16" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="3" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="14" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="10" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="10" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="24" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="3.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="24" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="3.5" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="18" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="18" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2.5" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="12" face-name="Call Eight OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" face-name="Call Three OT Regular" fill="#000000" halo-fill="#ffffff" halo-radius="2.5" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="country_label"
@@ -243,13 +243,130 @@
 
 <Style name="place_label" filter-mode="first">
   <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 2) and ([capital] = 3)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Regular" fill="#000000" size="12" halo-fill="#ffffff" allow-overlap="false" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 2) and ([capital] = 3)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Italic" fill="#000000" size="9" halo-fill="#ffffff" allow-overlap="false" halo-radius="1.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 2) and ([capital] = 2)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Regular" fill="#000000" size="12" halo-fill="#ffffff" allow-overlap="false" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 2) and ([capital] = 2)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Italic" fill="#000000" size="10" halo-fill="#ffffff" halo-radius="1.25" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Regular" fill="#000000" size="12" halo-fill="#ffffff" allow-overlap="false" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 1) and ([capital] = 3)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Regular" fill="#000000" size="12" halo-fill="#ffffff" allow-overlap="false" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <ShieldSymbolizer file="icons/city.png" face-name="Call Eight OT Regular" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 1) and ([capital] = 3)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Italic" fill="#000000" size="9" halo-fill="#ffffff" allow-overlap="false" halo-radius="1.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 1) and ([capital] = 2)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Regular" fill="#000000" size="12" halo-fill="#ffffff" allow-overlap="false" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <ShieldSymbolizer file="icons/city.png" face-name="Call Eight OT Regular" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 1) and ([capital] = 2)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Italic" fill="#000000" size="10" halo-fill="#ffffff" halo-radius="1.25" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Regular" fill="#000000" size="12" halo-fill="#ffffff" allow-overlap="false" halo-radius="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <ShieldSymbolizer file="icons/city.png" face-name="Call Eight OT Regular" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([capital] = 3)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Italic" fill="#000000" size="14" halo-fill="#ffffff" allow-overlap="false" halo-radius="1.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([capital] = 3)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Italic" fill="#000000" size="9" halo-fill="#ffffff" allow-overlap="false" halo-radius="1.25" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([capital] = 2)</Filter>
-    <TextSymbolizer face-name="Call Eight OT Regular" fill="#000000" size="10" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Call Eight OT Italic" fill="#000000" size="16" halo-fill="#ffffff" halo-radius="2" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([capital] = 2)</Filter>
+    <TextSymbolizer face-name="Call Eight OT Italic" fill="#000000" size="10" halo-fill="#ffffff" halo-radius="1.25" allow-overlap="false" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="place_label-citydots" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([capital] = 2) and ([ldir] = 'NW')</Filter>
+    <ShieldSymbolizer dx="-4" dy="-4" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#333333" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([capital] = 2) and ([ldir] = 'SW')</Filter>
+    <ShieldSymbolizer dx="-4" dy="4" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#333333" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([capital] = 2) and ([ldir] = 'SE')</Filter>
+    <ShieldSymbolizer dx="4" dy="4" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#333333" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([capital] = 2) and ([ldir] = 'NE')</Filter>
+    <ShieldSymbolizer dx="4" dy="-4" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#333333" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([capital] = 2) and ([ldir] = 'S')</Filter>
+    <ShieldSymbolizer dy="10" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#333333" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([capital] = 2) and ([ldir] = 'N')</Filter>
+    <ShieldSymbolizer dy="-10" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#333333" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([capital] = 2) and ([ldir] = 'W')</Filter>
+    <ShieldSymbolizer dx="-10" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#333333" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([capital] = 2) and ([ldir] = 'E')</Filter>
+    <ShieldSymbolizer dx="10" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#333333" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
 </Style>
 <Layer name="place_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>place_label-citydots</StyleName>
     <StyleName>place_label</StyleName>  </Layer>
 
 <Layer name="water_label"

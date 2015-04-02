@@ -3,6 +3,7 @@
 
 // Fonts //
 @reg: 'Call Eight OT Regular';
+@bold: 'Call Three OT Regular';
 @italic: 'Call Eight OT Italic';
 @negative: 'Call Eight Negative OT Regular';
 
