@@ -14,6 +14,7 @@
 
 Map { background-color: @white; }
 
+//land polygons
 #Admin0_Polygons {
   line-color: @black;
   [zoom=3]{
@@ -28,16 +29,19 @@ Map { background-color: @white; }
    line-width: 1.5;
 }
 
+//oceans
 #Sea {
   polygon-pattern-file: url("textures/grid2.png"); 
   polygon-pattern-opacity: .75;
 }
 
+//lakes
 #LakeHexes {
   polygon-fill: @blue;
   polygon-gamma: .2;
 }
 
+//rivers 
 #ne_10m_rivers_lake_centerlines{
   [zoom>=3]{
     [scalerank<4]{
