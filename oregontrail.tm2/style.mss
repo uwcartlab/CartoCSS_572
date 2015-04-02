@@ -15,14 +15,14 @@ Map { background-color: @white; }
 
 #Admin0_Polygons {
   line-color: @black;
-  [zoom=1]{
-    line-width: .5;
-  }
-  [zoom=2]{
+  [zoom=3]{
     line-width: .75; 
   }
-  [zoom=3]{
+  [zoom=4]{
     line-width: 1; 
+  }
+  [zoom=5]{
+    line-width: 1.25; 
   }
    line-width: 1.5;
 }
