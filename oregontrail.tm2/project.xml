@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-94.9219,31.9522,4</Parameter>
+  <Parameter name="center">-147.3926,68.1716,4</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">7</Parameter>
   <Parameter name="minzoom">3</Parameter>
@@ -57,6 +57,46 @@
     <StyleName>Sea</StyleName>  </Layer>
 
 <Style name="LandHexes" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 191023)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 183437)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 172083)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 191703)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 210138)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 159074)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 92107)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 83901)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([OBJECTID] = 151732)</Filter>

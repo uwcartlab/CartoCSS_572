@@ -107,3 +107,43 @@ Map { background-color: @white; }
     point-file: url("icons/wagon2.png");
     point-transform: scale(.5,.5);
 }
+
+#LandHexes[OBJECTID=83901][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=92107][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=159074][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=210138][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=191703][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=172083][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=183437][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=191023][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
