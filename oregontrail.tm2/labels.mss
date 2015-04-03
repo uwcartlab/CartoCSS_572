@@ -149,15 +149,15 @@
     [ldir='W'] { shield-text-dx: -12; }
     [ldir='N'] { shield-text-dy: -11; }
     [ldir='S'] { shield-text-dy: 11; }
-    [ldir='NE'] { shield-text-dx: 4; shield-text-dy: -4; }
-    [ldir='SE'] { shield-text-dx: 4; shield-text-dy: 4; }
-    [ldir='SW'] { shield-text-dx: -4; shield-text-dy: 4; }
-    [ldir='NW'] { shield-text-dx: -4; shield-text-dy: -4; }
+    [ldir='NE'] { shield-text-dx: 8; shield-text-dy: -8; }
+    [ldir='SE'] { shield-text-dx: 8; shield-text-dy: 8; }
+    [ldir='SW'] { shield-text-dx: -8; shield-text-dy: 8; }
+    [ldir='NW'] { shield-text-dx: -8; shield-text-dy: -8; }
 }
 
-//city labels
-#place_label[zoom>=5]{
-   [scalerank=1]{
+//city labels for brazil/australia missing capital problem
+#place_label[zoom=4]{
+   [scalerank<=1]{
     ::cityicon{
        shield-file: url('icons/city1.png');
        shield-unlock-image: true;
@@ -168,32 +168,41 @@
        shield-fill: @black;
        shield-halo-fill: @white;
        shield-halo-radius: 1.5;
-       [ldir='E'] { shield-text-dx: 8; }
-       [ldir='W'] { shield-text-dx: -8; }
-       [ldir='N'] { shield-text-dy: -8; }
-       [ldir='S'] { shield-text-dy: 8; }
-       [ldir='NE'] { shield-text-dx: 4; shield-text-dy: -4; }
-       [ldir='SE'] { shield-text-dx: 4; shield-text-dy: 4; }
-       [ldir='SW'] { shield-text-dx: -4; shield-text-dy: 4; }
-       [ldir='NW'] { shield-text-dx: -4; shield-text-dy: -4; }
-     /*text-face-name: @reg;
-     text-name: @name;
-     text-fill: @black;
-     text-size: 12;
-     text-halo-fill: @white;
-     text-allow-overlap: false;
-     text-halo-radius: 2;*/
+       [ldir='E'] { shield-text-dx: 10; }
+       [ldir='W'] { shield-text-dx: -10; }
+       [ldir='N'] { shield-text-dy: -10; }
+       [ldir='S'] { shield-text-dy: 10; }
+       [ldir='NE'] { shield-text-dx: 8; shield-text-dy: -8; }
+       [ldir='SE'] { shield-text-dx: 8; shield-text-dy: 8; }
+       [ldir='SW'] { shield-text-dx: -8; shield-text-dy: 8; }
+       [ldir='NW'] { shield-text-dx: -8; shield-text-dy: -8; }
       }
    } 
- /* [scalerank=2]{
-     text-face-name: @reg;
-     text-name: @name;
-     text-fill: @black;
-     text-size: 12;
-     text-halo-fill: @white;
-     text-allow-overlap: false;
-     text-halo-radius: 2;
-   } */
+}
+
+//city labels
+#place_label[zoom>=5]{
+   [scalerank<=2]{
+    ::cityicon{
+       shield-file: url('icons/city1.png');
+       shield-unlock-image: true;
+       shield-name: @name;
+       shield-size: 12;
+       shield-face-name: @reg;
+       shield-placement: point;
+       shield-fill: @black;
+       shield-halo-fill: @white;
+       shield-halo-radius: 1.5;
+       [ldir='E'] { shield-text-dx: 10; }
+       [ldir='W'] { shield-text-dx: -10; }
+       [ldir='N'] { shield-text-dy: -10; }
+       [ldir='S'] { shield-text-dy: 10; }
+       [ldir='NE'] { shield-text-dx: 8; shield-text-dy: -8; }
+       [ldir='SE'] { shield-text-dx: 8; shield-text-dy: 8; }
+       [ldir='SW'] { shield-text-dx: -8; shield-text-dy: 8; }
+       [ldir='NW'] { shield-text-dx: -8; shield-text-dy: -8; }
+      }
+   } 
 }
 
 

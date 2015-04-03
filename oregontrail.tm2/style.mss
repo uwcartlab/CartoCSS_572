@@ -72,3 +72,38 @@ Map { background-color: @white; }
   }
 }
 
+//fun things
+#LandHexes[OBJECTID=161229][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=106562][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=177150][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=197075][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=191548][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=204271][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}
+
+#LandHexes[OBJECTID=151732][zoom>=4]{
+    point-file: url("icons/wagon2.png");
+    point-transform: scale(.5,.5);
+}

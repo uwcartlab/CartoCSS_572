@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-87.9785,38.4106,5</Parameter>
+  <Parameter name="center">-94.9219,31.9522,4</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">7</Parameter>
   <Parameter name="minzoom">3</Parameter>
@@ -56,9 +56,46 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>Sea</StyleName>  </Layer>
 
+<Style name="LandHexes" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 151732)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 204271)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 191548)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 197075)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 177150)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 106562)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([OBJECTID] = 161229)</Filter>
+    <PointSymbolizer file="icons/wagon2.png" transform="scale(0.5,0.5)" />
+  </Rule>
+</Style>
 <Layer name="LandHexes"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>LandHexes</StyleName>  </Layer>
 
 <Style name="ne_10m_rivers_lake_centerlines" filter-mode="first">
   <Rule>
@@ -244,47 +281,146 @@
 <Style name="place_label-cityicon" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([ldir] = 'NW')</Filter>
-    <ShieldSymbolizer dx="-4" dy="-4" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <Filter>([ldir] = 'NW') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="-8" dy="-8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ldir] = 'NW') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="-8" dy="-8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([ldir] = 'SW')</Filter>
-    <ShieldSymbolizer dx="-4" dy="4" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <Filter>([scalerank] &lt;= 2) and ([ldir] = 'NW')</Filter>
+    <ShieldSymbolizer dx="-8" dy="-8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([ldir] = 'SE')</Filter>
-    <ShieldSymbolizer dx="4" dy="4" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <Filter>([ldir] = 'SW') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="-8" dy="8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ldir] = 'SW') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="-8" dy="8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([ldir] = 'NE')</Filter>
-    <ShieldSymbolizer dx="4" dy="-4" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <Filter>([scalerank] &lt;= 2) and ([ldir] = 'SW')</Filter>
+    <ShieldSymbolizer dx="-8" dy="8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([ldir] = 'S')</Filter>
-    <ShieldSymbolizer dy="8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <Filter>([ldir] = 'SE') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="8" dy="8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ldir] = 'SE') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="8" dy="8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([ldir] = 'N')</Filter>
-    <ShieldSymbolizer dy="-8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <Filter>([scalerank] &lt;= 2) and ([ldir] = 'SE')</Filter>
+    <ShieldSymbolizer dx="8" dy="8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([ldir] = 'W')</Filter>
-    <ShieldSymbolizer dx="-8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <Filter>([ldir] = 'NE') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="8" dy="-8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ldir] = 'NE') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="8" dy="-8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([ldir] = 'E')</Filter>
-    <ShieldSymbolizer dx="8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <Filter>([scalerank] &lt;= 2) and ([ldir] = 'NE')</Filter>
+    <ShieldSymbolizer dx="8" dy="-8" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1)</Filter>
+    <Filter>([ldir] = 'S') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dy="10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ldir] = 'S') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dy="10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 2) and ([ldir] = 'S')</Filter>
+    <ShieldSymbolizer dy="10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([ldir] = 'N') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dy="-10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ldir] = 'N') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dy="-10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 2) and ([ldir] = 'N')</Filter>
+    <ShieldSymbolizer dy="-10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([ldir] = 'W') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="-10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ldir] = 'W') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="-10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 2) and ([ldir] = 'W')</Filter>
+    <ShieldSymbolizer dx="-10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([ldir] = 'E') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ldir] = 'E') and ([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer dx="10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 2) and ([ldir] = 'E')</Filter>
+    <ShieldSymbolizer dx="10" file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 1)</Filter>
+    <ShieldSymbolizer file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 2)</Filter>
     <ShieldSymbolizer file="icons/city1.png" unlock-image="true" size="12" face-name="Call Eight OT Regular" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="1.5" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
 </Style>
@@ -292,22 +428,22 @@
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([capital] &lt;= 3) and ([ldir] = 'NW')</Filter>
-    <ShieldSymbolizer dx="-4" dy="-4" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Italic" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="-8" dy="-8" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Italic" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([capital] &lt;= 3) and ([ldir] = 'SW')</Filter>
-    <ShieldSymbolizer dx="-4" dy="4" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Italic" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="-8" dy="8" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Italic" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([capital] &lt;= 3) and ([ldir] = 'SE')</Filter>
-    <ShieldSymbolizer dx="4" dy="4" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Italic" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="8" dy="8" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Italic" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([capital] &lt;= 3) and ([ldir] = 'NE')</Filter>
-    <ShieldSymbolizer dx="4" dy="-4" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Italic" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer dx="8" dy="-8" file="icons/city3.png" unlock-image="true" size="12" face-name="Call Eight OT Italic" placement="point" fill="#000000" halo-fill="#ffffff" halo-radius="2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
