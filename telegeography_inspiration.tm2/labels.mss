@@ -35,10 +35,10 @@
   shield-unlock-image: true;
   shield-line-spacing: -2;
   // Fine-tune label positioning.
-  [ldir='E'] { shield-text-dx: 6; }
-  [ldir='W'] { shield-text-dx: -6; }
-  [ldir='N'] { shield-text-dy: -5; }
-  [ldir='S'] { shield-text-dy: 6; }
+  [ldir='E'] { shield-text-dx: 4; }
+  [ldir='W'] { shield-text-dx: -4; }
+  [ldir='N'] { shield-text-dy: -4; }
+  [ldir='S'] { shield-text-dy: 4; }
   [ldir='NE'] { shield-text-dx: 3; shield-text-dy: -3; }
   [ldir='SE'] { shield-text-dx: 3; shield-text-dy: 3; }
   [ldir='SW'] { shield-text-dx: -3; shield-text-dy: 3; }

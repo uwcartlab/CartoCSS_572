@@ -1,5 +1,6 @@
 _prefs: 
-  saveCenter: true
+  mapid: katiekowalsky.cec0cd4d
+  saveCenter: false
 _properties: 
   bridge: 
     "group-by": layer
@@ -10,16 +11,16 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 14.2383
-  - 53.7487
-  - 4
+  - -4.043
+  - 20.7972
+  - 3
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null
-maxzoom: 22
-minzoom: 0
-name: Telegeography_Political
+maxzoom: 8
+minzoom: 1
+name: Telegeography
 source: "mapbox:///katiekowalsky.8a66c984,katiekowalsky.4a6ac225,katiekowalsky.ef694aee,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
