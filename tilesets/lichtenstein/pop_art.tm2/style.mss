@@ -1,3 +1,7 @@
+@sans: 'Komika Hand Regular';
+@sans_italic: 'Komika Hand Italic';
+@sans_bold: 'Komika Hand Bold';
+
 Map {
   background-color: #fff;
 }
