@@ -4,7 +4,7 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-70.8398,37.9962,2</Parameter>
+  <Parameter name="center">-88.2422,-19.8907,3</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">14</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -59,8 +59,8 @@
 
 <Style name="admin" filter-mode="first">
   <Rule>
-    <Filter>([maritime] = 0)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#000000" />
+    <Filter>([maritime] = 0) and ([admin_level] = 2)</Filter>
+    <LineSymbolizer stroke-width="0.65" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
   </Rule>
 </Style>
 <Layer name="admin"

@@ -20,9 +20,12 @@ Map {
   polygon-fill: @blue;
 }
 
-#admin[maritime=0] {
-  line-width: 1;
+#admin[maritime=0][admin_level=2] {
+  line-width: .65;
   line-color: @black;
+  line-cap: round;
+  line-join: round;
+  line-smooth: .75;
 }
 
 
