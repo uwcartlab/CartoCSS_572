@@ -1,12 +1,6 @@
-//fonts used
-@sans: 'Komika Hand Regular';
-@sans_italic: 'Komika Hand Italic';
-@sans_bold: 'Komika Hand Bold';
-@name: '[name_en]';
-
 //colors used frequently
-@red: #8a1221;
-@blue: #1a1c46;
+@red: #BC243B;
+@blue: #1D4E89;
 @yellow: #fbd82b;
 @black: #000;
 @white: #fff;
@@ -16,13 +10,24 @@ Map {
 }
 
 #water {
-  opacity: .85;
+  opacity: .75;
   polygon-fill: @blue;
+  ::line{
+    line-color: @blue;
+    line-width: 2.5;
+    line-join: round;
+    line-cap: round;
+  }
+}
+
+#waterway {
+   line-width: .75;
+   line-color: @blue;
 }
 
 #admin[maritime=0][admin_level=2] {
-  line-width: .65;
-  line-color: @black;
+  line-width: 2;
+  line-color: @red;
   line-cap: round;
   line-join: round;
   line-smooth: .75;
