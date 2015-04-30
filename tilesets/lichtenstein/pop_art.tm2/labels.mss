@@ -18,7 +18,7 @@
   text-orientation: 5;
   text-character-spacing: -1;
   text-wrap-width: 80;
-  text-line-spacing: -2;
+  text-line-spacing: -10;
   [scalerank<=1]{
     text-size: 24;
   } [scalerank=2]{
