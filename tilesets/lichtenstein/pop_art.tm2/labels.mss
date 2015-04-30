@@ -8,6 +8,9 @@
   text-name: "[name_en] + '!'";
   text-face-name: @sans_bold;
   text-transform: uppercase;
+  [name_en = 'Democratic Republic of the Congo'] { 
+    text-name: ""DRC" + '!'";
+  }
   text-size: 10;
   text-fill: @white;
   text-halo-fill: @black;
@@ -29,9 +32,9 @@
       } [scalerank=2]{
         text-size: 24;
       } [scalerank=3]{
-        text-size: 16;
+        text-size: 18;
       }
-    text-size: 14;
+    text-size: 16;
    }
 }
 

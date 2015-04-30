@@ -4,7 +4,7 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-81.7383,27.3718,3</Parameter>
+  <Parameter name="center">-5.4492,19.8081,3</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">14</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -91,13 +91,33 @@
 <Style name="country_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 3) and ([name_en] = 'Democratic Republic of the Congo')</Filter>
+    <TextSymbolizer size="18" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([scalerank] = 3) and ([name_en] = 'Democratic Republic of the Congo')</Filter>
+    <TextSymbolizer size="14" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="16" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
+    <TextSymbolizer size="18" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
     <TextSymbolizer size="14" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([scalerank] = 2) and ([name_en] = 'Democratic Republic of the Congo')</Filter>
+    <TextSymbolizer size="24" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([scalerank] = 2) and ([name_en] = 'Democratic Republic of the Congo')</Filter>
+    <TextSymbolizer size="18" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -111,6 +131,16 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([scalerank] &lt;= 1) and ([name_en] = 'Democratic Republic of the Congo')</Filter>
+    <TextSymbolizer size="30" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 1) and ([name_en] = 'Democratic Republic of the Congo')</Filter>
+    <TextSymbolizer size="24" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([scalerank] &lt;= 1)</Filter>
     <TextSymbolizer size="30" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
   </Rule>
@@ -121,7 +151,17 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <TextSymbolizer size="14" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
+    <Filter>([name_en] = 'Democratic Republic of the Congo')</Filter>
+    <TextSymbolizer size="16" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([name_en] = 'Democratic Republic of the Congo')</Filter>
+    <TextSymbolizer face-name="Komika Hand Bold" text-transform="uppercase" size="10" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <TextSymbolizer size="16" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
