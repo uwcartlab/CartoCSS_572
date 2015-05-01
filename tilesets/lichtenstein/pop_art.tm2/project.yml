@@ -18,7 +18,7 @@ interactivity_layer: ''
 layers: null
 maxzoom: 14
 minzoom: 0
-name: ''
+name: lichtenstein
 source: "mapbox:///mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
