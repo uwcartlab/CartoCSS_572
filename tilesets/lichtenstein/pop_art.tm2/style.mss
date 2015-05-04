@@ -2,6 +2,7 @@
 @red: #BC243B;
 @blue: #1D4E89;
 @yellow: #fbd82b;
+@green: #019875;
 @black: #000;
 @white: #fff;
 
@@ -14,24 +15,26 @@ Map {
   polygon-fill: @blue;
   ::line{
     line-color: @blue;
-    line-width: 2.5;
+    line-width: 1.5;
     line-join: round;
     line-cap: round;
+    [zoom>=6]{
+      line-width: .75;
+    }
+    [zoom>=10]{
+       line-width: 0; 
+    }
   }
 }
 
-#waterway {
-   line-width: .75;
-   line-color: @blue;
-}
-
 #admin[maritime=0][admin_level=2][zoom>=3]{
-  line-width: 1;
+  line-width: .85;
   line-color: @red;
   line-cap: round;
   line-join: round;
   line-smooth: .75;
+  [zoom>=4]{
+     line-width: 1.5; 
+  }
 }
-
-
 

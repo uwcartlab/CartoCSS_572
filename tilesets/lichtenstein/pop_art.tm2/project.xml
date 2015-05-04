@@ -4,31 +4,74 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-67.3242,32.5468,3</Parameter>
+  <Parameter name="center">-74.0374,40.7235,13</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">14</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[lichtenstein]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v5]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
 
-<Layer name="landuse"
+<Style name="landcover" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'scrub')</Filter>
+    <PolygonSymbolizer fill="#019875" fill-opacity="0.8" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([class] = 'wood')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'snow')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" fill-opacity="0.45" />
+  </Rule>
+</Style>
+<Layer name="landcover"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>landcover</StyleName>  </Layer>
+
+<Layer name="hillshade"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="waterway" filter-mode="first">
+<Layer name="contour"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="landuse" filter-mode="first">
   <Rule>
-    <LineSymbolizer stroke-width="0.75" stroke="#1d4e89" />
+    <Filter>([class] = 'park')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
 </Style>
+<Layer name="landuse"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>landuse</StyleName>  </Layer>
+
 <Layer name="waterway"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>waterway</StyleName>  </Layer>
+      </Layer>
 
 <Style name="water-line" filter-mode="first">
   <Rule>
-    <LineSymbolizer stroke="#1d4e89" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="0" stroke="#1d4e89" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.75" stroke="#1d4e89" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <LineSymbolizer stroke="#1d4e89" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
 <Style name="water" filter-mode="first" opacity="0.75">
@@ -61,19 +104,42 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
+<Style name="road" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="1.5" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'street')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="0.75" />
+  </Rule>
+</Style>
 <Layer name="road"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>road</StyleName>  </Layer>
 
+<Style name="bridge" filter-mode="first">
+  <Rule>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="1.5" />
+  </Rule>
+</Style>
 <Layer name="bridge"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>bridge</StyleName>  </Layer>
 
 <Style name="admin" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 2)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+    <LineSymbolizer stroke-width="1.5" stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] = 2)</Filter>
+    <LineSymbolizer stroke-width="0.85" stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
   </Rule>
 </Style>
 <Layer name="admin"
