@@ -1,3 +1,15 @@
+#building{
+  polygon-fill: @yellow;
+  line-color: @black;
+  line-width: .15;
+  [zoom>=15]{
+     line-width: .5;
+  }
+  [zoom>=18]{
+     line-width: 1; 
+  }
+}
+
 #landcover[class='wood'][zoom<=10]{
   polygon-pattern-file: url("img/halftone5.svg");
 }
@@ -12,10 +24,22 @@
    polygon-opacity: .8;
 }
 
-#landuse[class='wood']{
+#landuse[class='school'],[class='cemetery']{
    polygon-pattern-file: url("img/halftone5.svg");
 }
 
-#landuse[class='park']{
+#landuse[class='park'],[class='wood']{
    polygon-fill: @green;
+}
+
+#landuse[class='hospital'],[class='pitch']{
+  polygon-fill: @red;
+}
+
+#landuse[class='industrial'],[class='parking'],[class='sand']{
+ polygon-fill: @blue * .85; 
+}
+
+#aeroway {
+  polygon-fill: @blue;
 }

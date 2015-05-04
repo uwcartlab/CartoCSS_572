@@ -9,14 +9,14 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -74.0374
-  - 40.7235
-  - 13
+  - -73.9917
+  - 40.7199
+  - 14
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null
-maxzoom: 14
+maxzoom: 22
 minzoom: 0
 name: lichtenstein
 source: "mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5"

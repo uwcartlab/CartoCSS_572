@@ -28,7 +28,7 @@ Map {
 }
 
 #admin[maritime=0][admin_level=2][zoom>=3]{
-  line-width: .85;
+  line-width: 1;
   line-color: @red;
   line-cap: round;
   line-join: round;
