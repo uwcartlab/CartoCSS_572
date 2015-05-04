@@ -4,7 +4,7 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-73.9917,40.7199,14</Parameter>
+  <Parameter name="center">-74.026,40.7154,14</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -279,42 +279,12 @@
 
 <Style name="building" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#fbd82b" />
-    <LineSymbolizer stroke-width="1" stroke="#000000" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#fbd82b" />
-    <LineSymbolizer stroke-width="0.5" stroke="#000000" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'cemetery')</Filter>
-    <PolygonSymbolizer fill="#fbd82b" />
-    <LineSymbolizer stroke="#000000" stroke-width="0.15" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#fbd82b" />
-    <LineSymbolizer stroke-width="1" stroke="#000000" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <PolygonSymbolizer fill="#fbd82b" />
-    <LineSymbolizer stroke-width="0.5" stroke="#000000" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <PolygonSymbolizer fill="#fbd82b" />
-    <LineSymbolizer stroke="#000000" stroke-width="0.15" />
   </Rule>
   <Rule>
     <Filter>([class] = 'parking')</Filter>
@@ -366,23 +336,31 @@
 <Style name="tunnel" filter-mode="first">
   <Rule>
     <Filter>([class] = 'parking')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.75" />
     <PolygonSymbolizer fill="#194274" />
   </Rule>
   <Rule>
     <Filter>([class] = 'sand')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.75" />
     <PolygonSymbolizer fill="#194274" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.75" />
     <PolygonSymbolizer fill="#bc243b" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.75" />
     <PolygonSymbolizer fill="#019875" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.75" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.75" />
   </Rule>
 </Style>
 <Layer name="tunnel"
@@ -391,12 +369,29 @@
 
 <Style name="road" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="1.25" stroke="#000000" />
+    <LineSymbolizer stroke-width="5.5" stroke="#000000" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+  </Rule>
+  <Rule>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([class] = 'main')</Filter>
     <LineSymbolizer stroke="#000000" stroke-width="0.75" />
