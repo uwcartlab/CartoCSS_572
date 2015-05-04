@@ -4,7 +4,7 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-91.2305,47.1598,4</Parameter>
+  <Parameter name="center">-85.7813,48.9802,4</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -15,24 +15,17 @@
 
 <Style name="landcover" filter-mode="first">
   <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([class] = 'scrub')</Filter>
+    <Filter>([class] = 'grass')</Filter>
     <PolygonSymbolizer fill="#019875" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <PolygonSymbolizer fill="#019875" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
   </Rule>
   <Rule>
     <Filter>([class] = 'snow')</Filter>
     <PolygonSymbolizer fill="#1d4e89" fill-opacity="0.45" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'scrub')</Filter>
+    <PolygonSymbolizer fill="#019875" fill-opacity="0.35" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" comp-op="soft-light" />
   </Rule>
   <Rule>
     <Filter>([class] = 'parking')</Filter>
@@ -45,6 +38,11 @@
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -71,6 +69,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -97,6 +96,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -119,6 +119,7 @@
   <Rule>
     <Filter>([class] = 'park')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'school')</Filter>
@@ -139,6 +140,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -165,6 +167,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -192,6 +195,11 @@
 </Style>
 <Style name="water" filter-mode="first" opacity="0.75">
   <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
     <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
@@ -210,10 +218,6 @@
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
   </Rule>
 </Style>
 <Layer name="water"
@@ -223,6 +227,11 @@
 
 <Style name="aeroway" filter-mode="first">
   <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <PolygonSymbolizer fill="#1d4e89" />
+  </Rule>
+  <Rule>
     <Filter>([class] = 'cemetery')</Filter>
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
     <PolygonSymbolizer fill="#1d4e89" />
@@ -241,10 +250,6 @@
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
   </Rule>
 </Style>
 <Layer name="aeroway"
@@ -267,6 +272,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -278,6 +284,11 @@
     <StyleName>barrier_line</StyleName>  </Layer>
 
 <Style name="building" filter-mode="first">
+  <Rule>
+    <Filter>([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#fbd82b" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
     <PolygonSymbolizer fill="#fbd82b" />
@@ -297,10 +308,6 @@
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
   </Rule>
 </Style>
 <Layer name="building"
@@ -323,6 +330,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -353,6 +361,7 @@
     <Filter>([class] = 'wood')</Filter>
     <LineSymbolizer stroke-width="2" stroke-opacity="0.75" />
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -383,6 +392,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -435,6 +445,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -505,6 +516,7 @@
     <Filter>([maritime] = 0) and ([admin_level] = 2) and ([class] = 'wood')</Filter>
     <LineSymbolizer stroke-width="1.5" stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
@@ -512,11 +524,13 @@
     <Filter>([maritime] = 0) and ([admin_level] = 2) and ([class] = 'wood')</Filter>
     <LineSymbolizer stroke-width="1" stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>100000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 2) and ([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -562,6 +576,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -591,6 +606,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
     <LineSymbolizer stroke-width="3" />
   </Rule>
   <Rule>
@@ -648,12 +664,14 @@
     <Filter>([scalerank] = 3) and ([name_en] = 'Democratic Republic of the Congo') and ([class] = 'wood')</Filter>
     <TextSymbolizer size="18" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 3) and ([name_en] = 'Democratic Republic of the Congo') and ([class] = 'wood')</Filter>
     <TextSymbolizer size="14" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -718,12 +736,14 @@
     <Filter>([scalerank] = 3) and ([class] = 'wood')</Filter>
     <TextSymbolizer size="18" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 3) and ([class] = 'wood')</Filter>
     <TextSymbolizer size="14" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -788,12 +808,14 @@
     <Filter>([scalerank] = 2) and ([name_en] = 'Democratic Republic of the Congo') and ([class] = 'wood')</Filter>
     <TextSymbolizer size="24" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 2) and ([name_en] = 'Democratic Republic of the Congo') and ([class] = 'wood')</Filter>
     <TextSymbolizer size="18" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -858,12 +880,14 @@
     <Filter>([scalerank] = 2) and ([class] = 'wood')</Filter>
     <TextSymbolizer size="24" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 2) and ([class] = 'wood')</Filter>
     <TextSymbolizer size="18" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -928,12 +952,14 @@
     <Filter>([scalerank] &lt;= 1) and ([name_en] = 'Democratic Republic of the Congo') and ([class] = 'wood')</Filter>
     <TextSymbolizer size="30" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] &lt;= 1) and ([name_en] = 'Democratic Republic of the Congo') and ([class] = 'wood')</Filter>
     <TextSymbolizer size="24" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -998,12 +1024,14 @@
     <Filter>([scalerank] &lt;= 1) and ([class] = 'wood')</Filter>
     <TextSymbolizer size="30" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] &lt;= 1) and ([class] = 'wood')</Filter>
     <TextSymbolizer size="24" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -1068,12 +1096,14 @@
     <Filter>([name_en] = 'Democratic Republic of the Congo') and ([class] = 'wood')</Filter>
     <TextSymbolizer size="16" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([name_en] = 'Democratic Republic of the Congo') and ([class] = 'wood')</Filter>
     <TextSymbolizer face-name="Komika Hand Bold" text-transform="uppercase" size="10" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[ DRC  + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -1138,12 +1168,14 @@
     <Filter>([class] = 'wood')</Filter>
     <TextSymbolizer size="16" face-name="Komika Hand Bold" text-transform="uppercase" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([class] = 'wood')</Filter>
     <TextSymbolizer face-name="Komika Hand Bold" text-transform="uppercase" size="10" fill="#ffffff" halo-fill="#000000" halo-radius="2" orientation="5" character-spacing="-1" wrap-width="80" line-spacing="-10" ><![CDATA[[name_en] + '!']]></TextSymbolizer>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
@@ -1186,6 +1218,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -1212,6 +1245,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -1238,6 +1272,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -1264,6 +1299,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -1290,6 +1326,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -1316,6 +1353,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -1342,6 +1380,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
@@ -1368,6 +1407,7 @@
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>

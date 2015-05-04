@@ -10,8 +10,11 @@
   } */
 }
 
-#landcover[class='wood'][zoom<=10]{
+#landcover[class='scrub']{
+  polygon-fill: @green; 
+  polygon-opacity: .35;
   polygon-pattern-file: url("img/halftone5.svg");
+  polygon-pattern-comp-op: soft-light;
 }
 
 #landcover[class='snow']{
@@ -19,7 +22,7 @@
    polygon-opacity: .45;
 }
 
-#landcover[class='scrub'][zoom<=10]{
+#landcover[class='grass']{
    polygon-fill: @green; 
    polygon-opacity: .5;
 }
@@ -30,6 +33,7 @@
 
 #landuse[class='park'],[class='wood']{
    polygon-fill: @green;
+   polygon-pattern-file: url("img/halftone5.svg");
 }
 
 #landuse[class='hospital'],[class='pitch']{
