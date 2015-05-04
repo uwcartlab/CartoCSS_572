@@ -4,7 +4,7 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-74.026,40.7154,14</Parameter>
+  <Parameter name="center">-91.2305,47.1598,4</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -17,7 +17,7 @@
   <Rule>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([class] = 'scrub')</Filter>
-    <PolygonSymbolizer fill="#019875" fill-opacity="0.8" />
+    <PolygonSymbolizer fill="#019875" fill-opacity="0.5" />
   </Rule>
   <Rule>
     <MinScaleDenominator>400000</MinScaleDenominator>
@@ -369,38 +369,6 @@
 
 <Style name="road" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="5.5" stroke="#000000" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#000000" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#000000" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#000000" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke="#000000" stroke-width="0.75" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'street')</Filter>
-    <LineSymbolizer stroke="#000000" stroke-width="0.5" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#194274" />
   </Rule>
@@ -421,8 +389,30 @@
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
 </Style>
+<Style name="road-fill" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="2" stroke="#ffffff" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1.25" stroke="#ffffff" />
+  </Rule>
+</Style>
+<Style name="road-case" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="3.5" stroke="#000000" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="3" stroke="#000000" />
+  </Rule>
+</Style>
 <Layer name="road"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>road-case</StyleName>
+    <StyleName>road-fill</StyleName>
     <StyleName>road</StyleName>  </Layer>
 
 <Style name="bridge" filter-mode="first">

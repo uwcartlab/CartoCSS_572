@@ -21,7 +21,7 @@
 
 #landcover[class='scrub'][zoom<=10]{
    polygon-fill: @green; 
-   polygon-opacity: .8;
+   polygon-opacity: .5;
 }
 
 #landuse[class='school'],[class='cemetery']{
