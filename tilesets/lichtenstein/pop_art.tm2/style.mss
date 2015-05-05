@@ -35,3 +35,11 @@ Map {
      line-width: 1.5; 
   }
 }
+
+#admin[maritime=0][admin_level=4][zoom>=5]{
+  line-width: 1.5;
+  line-color: @red;
+  line-cap: round;
+  line-join: round;
+  line-smooth: .75;
+}

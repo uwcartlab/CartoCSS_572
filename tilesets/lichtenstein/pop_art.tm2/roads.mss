@@ -1,4 +1,4 @@
-#road {
+#road[zoom>=6] {
   line-join: round;
   line-cap: round;
     ::case {

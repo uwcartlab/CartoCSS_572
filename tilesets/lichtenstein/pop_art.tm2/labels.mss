@@ -138,7 +138,7 @@
   }
 }
 
-#place_label[type='city'][scalerank<=5][zoom>=7]{
+#place_label[type='city'][scalerank<=5][zoom>=6]{
   shield-file: url("img/dot.svg");
   shield-face-name: @sans;
   shield-name: "[name_en]";
@@ -250,3 +250,14 @@
   text-size: 10;
 }
 
+#poi_label[scalerank=1][zoom>=15]{
+  text-name: "[name_en]";
+  text-face-name: @sans_italic;
+  text-fill: @black;
+  text-size: 14;
+  text-halo-radius: 2;
+  text-halo-fill: @white;
+  text-min-distance: 100;
+  text-wrap-width: 50;
+  text-line-spacing: -2;
+}
