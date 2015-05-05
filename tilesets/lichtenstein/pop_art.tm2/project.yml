@@ -1,6 +1,6 @@
 _prefs: 
-  mapid: ''
-  saveCenter: true
+  mapid: katiekowalsky.236692c1
+  saveCenter: false
 _properties: {}
 attribution: ''
 bounds: 
@@ -9,9 +9,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -85.7813
-  - 42.1471
-  - 6
+  - -77.6953
+  - 41.7057
+  - 4
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
