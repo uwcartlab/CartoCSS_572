@@ -138,6 +138,60 @@
   }
 }
 
+#place_label[type='city'][scalerank<=5][zoom>=7]{
+  shield-file: url("img/dot.svg");
+  shield-face-name: @sans;
+  shield-name: "[name_en]";
+  shield-unlock-image: true;
+  shield-transform: scale(.5,.5);
+  shield-placement: point;
+  shield-size: 12;
+  shield-text-dx: 3;
+  shield-text-dy: 3;
+  shield-fill: @white;
+  shield-halo-fill: @black;
+  shield-halo-radius: 1.25;
+  [ldir = 'N'],[ldir = 'E']{
+    shield-text-dx: 3;
+    shield-text-dy: 3;
+  }
+  [ldir = 'W']{
+    shield-text-dx: -3;
+    shield-text-dy: 3;
+  }
+  [ldir = 'S']{
+    shield-text-dx: 3;
+    shield-text-dy: -3;
+  }
+}
+
+#place_label[type='city'][scalerank<=8][zoom>=8]{
+  shield-file: url("img/dot.svg");
+  shield-face-name: @sans;
+  shield-name: "[name_en]";
+  shield-unlock-image: true;
+  shield-transform: scale(.5,.5);
+  shield-placement: point;
+  shield-size: 12;
+  shield-text-dx: 3;
+  shield-text-dy: 3;
+  shield-fill: @white;
+  shield-halo-fill: @black;
+  shield-halo-radius: 1.25;
+  [ldir = 'N'],[ldir = 'E']{
+    shield-text-dx: 3;
+    shield-text-dy: 3;
+  }
+  [ldir = 'W']{
+    shield-text-dx: -3;
+    shield-text-dy: 3;
+  }
+  [ldir = 'S']{
+    shield-text-dx: 3;
+    shield-text-dy: -3;
+  }
+}
+
 #marine_label[labelrank<=1]{
   text-name: "[name_en]";
   text-face-name: @sans_italic;
@@ -195,3 +249,4 @@
   text-min-padding: 20;
   text-size: 10;
 }
+
