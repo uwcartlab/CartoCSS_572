@@ -1,5 +1,5 @@
 #building{
-  polygon-fill: @yellow;
+  building-fill: @yellow;
 }
 
 #landcover[class='scrub']{
