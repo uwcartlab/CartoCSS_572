@@ -3,7 +3,7 @@
 @sans_italic: 'Komika Hand Italic';
 @sans_bold: 'Komika Hand Bold';
 
-#country_label{
+#country_label[scalerank<=8]{
 //adding ! to country names a la comic! from mapbox
   text-name: "[name_en] + '!'";
   text-face-name: @sans_bold;
@@ -97,6 +97,10 @@
     shield-text-dx: 3;
     shield-text-dy: -3;
   }
+  [zoom>=10]{
+    shield-size: 13;
+    shield-halo-radius: 1.5;
+  }
 }
 
 #place_label[type='city'][scalerank<=5][zoom>=6]{
@@ -123,6 +127,10 @@
   [ldir = 'S']{
     shield-text-dx: 3;
     shield-text-dy: -3;
+  }
+  [zoom>=10]{
+    shield-size: 13;
+    shield-halo-radius: 1.5;
   }
 }
 
@@ -151,7 +159,39 @@
     shield-text-dx: 3;
     shield-text-dy: -3;
   }
+  [zoom>=10]{
+    shield-size: 13;
+    shield-halo-radius: 1.5;
+  }
 }
+
+#place_label[type='town'][zoom>=11]{
+  shield-file: url("img/dot.svg");
+  shield-face-name: @sans;
+  shield-name: "[name_en]";
+  shield-unlock-image: true;
+  shield-transform: scale(.5,.5);
+  shield-placement: point;
+  shield-size: 13;
+  shield-text-dx: 3;
+  shield-text-dy: 3;
+  shield-fill: @white;
+  shield-halo-fill: @black;
+  shield-halo-radius: 1.5;
+  [ldir = 'N'],[ldir = 'E']{
+    shield-text-dx: 3;
+    shield-text-dy: 3;
+  }
+  [ldir = 'W']{
+    shield-text-dx: -3;
+    shield-text-dy: 3;
+  }
+  [ldir = 'S']{
+    shield-text-dx: 3;
+    shield-text-dy: -3;
+  }
+}
+
 
 #marine_label[labelrank<=1]{
   text-name: "[name_en]";
@@ -168,20 +208,18 @@
   }
 }
 
-#water_label{
+#water_label[area>=10000000]{
   text-name: "[name_en]";
   text-face-name: @sans_italic;
   text-fill: @blue;
   text-halo-fill: @blue * .75;
+  text-size: 12;
+  text-halo-radius: 1;
+  text-wrap-width: 30;
   [area>=20000000]{
     text-size: 21;
     text-halo-radius: 1.2;
     text-wrap-width: 20;
-  }
-  [area>=10000000]{
-    text-size: 12;
-    text-halo-radius: 1;
-    text-wrap-width: 30;
   }
 }
 
@@ -208,7 +246,31 @@
   }
 }
 
+#poi_label[scalerank<=2][zoom>=12]{
+  text-name: "[name_en]";
+  text-face-name: @sans_italic;
+  text-fill: @black;
+  text-size: 12;
+  text-halo-radius: 2.5;
+  text-halo-fill: @white;
+  text-min-distance: 100;
+  text-wrap-width: 50;
+  text-line-spacing: -4;
+}
+
 #poi_label[scalerank<=3][zoom>=15]{
+  text-name: "[name_en]";
+  text-face-name: @sans_italic;
+  text-fill: @black;
+  text-size: 14;
+  text-halo-radius: 2;
+  text-halo-fill: @white;
+  text-min-distance: 100;
+  text-wrap-width: 50;
+  text-line-spacing: -2;
+}
+
+#poi_label[scalerank<=5][zoom>=17]{
   text-name: "[name_en]";
   text-face-name: @sans_italic;
   text-fill: @black;
