@@ -13,16 +13,14 @@ Map {
 #water {
   opacity: .75;
   polygon-fill: @blue;
+  polygon-gamma: .2;
   ::line{
     line-color: @blue;
     line-width: 1.5;
     line-join: round;
     line-cap: round;
     [zoom>=6]{
-      line-width: .75;
-    }
-    [zoom>=10]{
-       line-width: 0; 
+      line-width: 0;
     }
   }
 }
@@ -37,4 +35,3 @@ Map {
      line-width: 1.5; 
   }
 }
-

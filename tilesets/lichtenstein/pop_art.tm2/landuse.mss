@@ -20,6 +20,8 @@
 #landcover[class='snow']{
    polygon-fill: @blue;
    polygon-opacity: .45;
+   polygon-pattern-file: url("img/halftone5.svg");
+   polygon-pattern-comp-op: overlay;
 }
 
 #landcover[class='grass']{
@@ -41,9 +43,5 @@
 }
 
 #landuse[class='industrial'],[class='parking'],[class='sand']{
- polygon-fill: @blue * .85; 
-}
-
-#aeroway {
-  polygon-fill: @blue;
+  polygon-fill: @blue; 
 }
