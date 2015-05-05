@@ -515,6 +515,7 @@
   <Rule>
     <MinScaleDenominator>100000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 2) and ([class] = 'parking')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#1d4e89" />
   </Rule>
   <Rule>
@@ -533,6 +534,7 @@
   <Rule>
     <MinScaleDenominator>100000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 2) and ([class] = 'sand')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#1d4e89" />
   </Rule>
   <Rule>
@@ -551,6 +553,7 @@
   <Rule>
     <MinScaleDenominator>100000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 2) and ([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#bc243b" />
   </Rule>
   <Rule>
@@ -571,6 +574,7 @@
   <Rule>
     <MinScaleDenominator>100000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 2) and ([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
@@ -590,6 +594,7 @@
   <Rule>
     <MinScaleDenominator>100000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 2) and ([class] = 'cemetery')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
@@ -604,6 +609,11 @@
     <LineSymbolizer stroke-width="1" stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
   </Rule>
   <Rule>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] = 2)</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 4) and ([class] = 'parking')</Filter>
     <LineSymbolizer stroke-width="1.5" stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
@@ -612,6 +622,7 @@
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 4) and ([class] = 'parking')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#1d4e89" />
   </Rule>
   <Rule>
@@ -623,6 +634,7 @@
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 4) and ([class] = 'sand')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#1d4e89" />
   </Rule>
   <Rule>
@@ -634,6 +646,7 @@
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 4) and ([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#bc243b" />
   </Rule>
   <Rule>
@@ -646,6 +659,7 @@
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 4) and ([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
@@ -658,12 +672,48 @@
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 4) and ([class] = 'cemetery')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([maritime] = 0) and ([admin_level] = 4)</Filter>
     <LineSymbolizer stroke-width="1.5" stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+  </Rule>
+  <Rule>
+    <Filter>([maritime] = 0) and ([class] = 'parking')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+    <PolygonSymbolizer fill="#1d4e89" />
+  </Rule>
+  <Rule>
+    <Filter>([maritime] = 0) and ([class] = 'sand')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+    <PolygonSymbolizer fill="#1d4e89" />
+  </Rule>
+  <Rule>
+    <Filter>([maritime] = 0) and ([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+    <PolygonSymbolizer fill="#bc243b" />
+  </Rule>
+  <Rule>
+    <Filter>([maritime] = 0) and ([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <Filter>([maritime] = 0) and ([class] = 'cemetery')</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <Filter>([maritime] = 0)</Filter>
+    <LineSymbolizer stroke="#bc243b" stroke-linecap="round" stroke-linejoin="round" smooth="0.75" />
   </Rule>
   <Rule>
     <Filter>([class] = 'parking')</Filter>
@@ -1311,73 +1361,73 @@
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
-    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'sand')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
-    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'sand')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
-    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'cemetery')</Filter>
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([labelrank] &lt;= 1) and ([class] = 'cemetery')</Filter>
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <Filter>([labelrank] &lt;= 1)</Filter>
-    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="24" face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([labelrank] &lt;= 1)</Filter>
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-radius="2" halo-fill="#163b67" size="18" character-spacing="-1" wrap-width="50" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'parking')</Filter>
@@ -1644,110 +1694,6 @@
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E')</Filter>
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E')</Filter>
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'N') and ([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
     <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
@@ -1847,6 +1793,110 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'N')</Filter>
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E') and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E')</Filter>
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] = 2) and ([ldir] = 'E')</Filter>
     <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
@@ -2496,328 +2546,6 @@
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2)</Filter>
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2)</Filter>
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2)</Filter>
-    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2)</Filter>
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5)</Filter>
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5)</Filter>
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'parking')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'sand')</Filter>
-    <PolygonSymbolizer fill="#1d4e89" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#bc243b" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'wood')</Filter>
-    <PolygonSymbolizer fill="#019875" />
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'cemetery')</Filter>
-    <PolygonPatternSymbolizer file="img/halftone5.svg" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N')</Filter>
-    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([ldir] = 'E') and ([scalerank] &lt; 2) and ([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
     <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
@@ -3135,6 +2863,328 @@
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'E')</Filter>
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2) and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2)</Filter>
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2)</Filter>
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2)</Filter>
+    <ShieldSymbolizer dx="3" dy="3" size="16" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt; 2)</Filter>
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5) and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5)</Filter>
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([ldir] = 'N') and ([scalerank] &lt;= 5)</Filter>
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#1d4e89" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'pitch')</Filter>
+    <PolygonSymbolizer fill="#bc243b" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#019875" />
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N') and ([class] = 'cemetery')</Filter>
+    <PolygonPatternSymbolizer file="img/halftone5.svg" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([scalerank] &lt;= 8) and ([ldir] = 'N')</Filter>
     <ShieldSymbolizer dx="3" dy="3" file="img/dot.svg" face-name="Komika Hand Regular" unlock-image="true" transform="scale(0.5,0.5)" placement="point" size="12" fill="#ffffff" halo-fill="#000000" halo-radius="1.25" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
@@ -3593,83 +3643,91 @@
   <Rule>
     <Filter>([area] &gt;= 10000000) and ([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="12" halo-radius="1" halo-fill="#163b67" wrap-width="30" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" halo-radius="1" wrap-width="30" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 10000000) and ([class] = 'sand')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="12" halo-radius="1" halo-fill="#163b67" wrap-width="30" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" halo-radius="1" wrap-width="30" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 10000000) and ([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="12" halo-radius="1" halo-fill="#163b67" wrap-width="30" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" halo-radius="1" wrap-width="30" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 10000000) and ([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="12" halo-radius="1" halo-fill="#163b67" wrap-width="30" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" halo-radius="1" wrap-width="30" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 10000000) and ([class] = 'cemetery')</Filter>
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="12" halo-radius="1" halo-fill="#163b67" wrap-width="30" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" halo-radius="1" wrap-width="30" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 10000000)</Filter>
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="12" halo-radius="1" halo-fill="#163b67" wrap-width="30" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" halo-radius="1" wrap-width="30" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 20000000) and ([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="21" halo-radius="1.2" halo-fill="#163b67" wrap-width="20" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="21" halo-radius="1.2" wrap-width="20" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 20000000) and ([class] = 'sand')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="21" halo-radius="1.2" halo-fill="#163b67" wrap-width="20" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="21" halo-radius="1.2" wrap-width="20" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 20000000) and ([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="21" halo-radius="1.2" halo-fill="#163b67" wrap-width="20" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="21" halo-radius="1.2" wrap-width="20" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 20000000) and ([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="21" halo-radius="1.2" halo-fill="#163b67" wrap-width="20" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="21" halo-radius="1.2" wrap-width="20" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 20000000) and ([class] = 'cemetery')</Filter>
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="21" halo-radius="1.2" halo-fill="#163b67" wrap-width="20" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="21" halo-radius="1.2" wrap-width="20" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([area] &gt;= 20000000)</Filter>
-    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" size="21" halo-radius="1.2" halo-fill="#163b67" wrap-width="20" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="21" halo-radius="1.2" wrap-width="20" face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'sand')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <TextSymbolizer face-name="Komika Hand Italic" fill="#1d4e89" halo-fill="#163b67" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="water_label"
@@ -3679,64 +3737,64 @@
 <Style name="poi_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'parking')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
     <TextSymbolizer face-name="Komika Hand Italic" fill="#000000" size="14" halo-radius="2" halo-fill="#ffffff" minimum-distance="100" wrap-width="50" line-spacing="-2" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'parking')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'sand')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'sand')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
     <TextSymbolizer face-name="Komika Hand Italic" fill="#000000" size="14" halo-radius="2" halo-fill="#ffffff" minimum-distance="100" wrap-width="50" line-spacing="-2" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'sand')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'sand')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'pitch')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
     <TextSymbolizer face-name="Komika Hand Italic" fill="#000000" size="14" halo-radius="2" halo-fill="#ffffff" minimum-distance="100" wrap-width="50" line-spacing="-2" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'pitch')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'wood')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
     <TextSymbolizer face-name="Komika Hand Italic" fill="#000000" size="14" halo-radius="2" halo-fill="#ffffff" minimum-distance="100" wrap-width="50" line-spacing="-2" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'wood')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'cemetery')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'cemetery')</Filter>
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
     <TextSymbolizer face-name="Komika Hand Italic" fill="#000000" size="14" halo-radius="2" halo-fill="#ffffff" minimum-distance="100" wrap-width="50" line-spacing="-2" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([scalerank] = 1) and ([class] = 'cemetery')</Filter>
+    <Filter>([scalerank] &lt;= 3) and ([class] = 'cemetery')</Filter>
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1)</Filter>
+    <Filter>([scalerank] &lt;= 3)</Filter>
     <TextSymbolizer face-name="Komika Hand Italic" fill="#000000" size="14" halo-radius="2" halo-fill="#ffffff" minimum-distance="100" wrap-width="50" line-spacing="-2" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3767,33 +3825,51 @@
 
 <Style name="road_label" filter-mode="first">
   <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([class] = 'street')</Filter>
+    <TextSymbolizer minimum-distance="250" minimum-padding="20" size="10" face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'street')</Filter>
+    <TextSymbolizer face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <Filter>([class] = 'main')</Filter>
-    <TextSymbolizer face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" minimum-padding="20" size="10" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer minimum-padding="20" size="10" face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'motorway')</Filter>
-    <TextSymbolizer face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" minimum-padding="5" size="14" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer minimum-padding="5" size="14" face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'parking')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
+    <TextSymbolizer face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'sand')</Filter>
     <PolygonSymbolizer fill="#1d4e89" />
+    <TextSymbolizer face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#bc243b" />
+    <TextSymbolizer face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <TextSymbolizer face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
+    <TextSymbolizer face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <TextSymbolizer face-name="Komika Hand Regular" fill="#000000" halo-radius="1.5" halo-fill="#ffffff" placement="line" minimum-distance="250" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="road_label"

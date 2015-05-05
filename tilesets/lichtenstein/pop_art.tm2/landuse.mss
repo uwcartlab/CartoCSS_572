@@ -1,13 +1,5 @@
 #building{
   polygon-fill: @yellow;
-/*  line-color: @black;
-  line-width: .15;
-  [zoom>=15]{
-     line-width: .5;
-  }
-  [zoom>=18]{
-     line-width: 1; 
-  } */
 }
 
 #landcover[class='scrub']{

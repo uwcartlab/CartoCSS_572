@@ -25,21 +25,18 @@ Map {
   }
 }
 
-#admin[maritime=0][admin_level=2][zoom>=3]{
-  line-width: 1;
+#admin[maritime=0]{
   line-color: @red;
   line-cap: round;
   line-join: round;
   line-smooth: .75;
-  [zoom>=4]{
-     line-width: 1.5; 
+  [admin_level=2][zoom>=3]{
+    line-width: 1;
+    [zoom>=4]{
+       line-width: 1.5; 
+    }
   }
-}
-
-#admin[maritime=0][admin_level=4][zoom>=5]{
-  line-width: 1.5;
-  line-color: @red;
-  line-cap: round;
-  line-join: round;
-  line-smooth: .75;
+  [admin_level=4][zoom>=5]{
+    line-width: 1.5;
+  }
 }
