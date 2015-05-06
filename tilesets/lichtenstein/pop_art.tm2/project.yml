@@ -2,7 +2,7 @@ _prefs:
   mapid: katiekowalsky.236692c1
   saveCenter: false
 _properties: {}
-attribution: ''
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
 bounds: 
   - -180
   - -85.0511
@@ -12,7 +12,7 @@ center:
   - -46.2305
   - 43.1972
   - 3
-description: ''
+description: Pop art tileset inspired by artist Roy Lichtenstein by Katie Kowalsky
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null

@@ -29,7 +29,7 @@ Map {
   line-color: @red;
   line-cap: round;
   line-join: round;
-  line-smooth: .75;
+  line-smooth: 1.75;
   [zoom>=3]{
     line-width: 1.15;
   }
