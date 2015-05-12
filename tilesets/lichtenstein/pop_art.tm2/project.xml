@@ -284,32 +284,32 @@
 <Style name="building" filter-mode="first">
   <Rule>
     <Filter>([class] = 'parking')</Filter>
-    <BuildingSymbolizer fill="#fbd82b" />
+    <BuildingSymbolizer fill="#fbd82b" height="7" />
     <PolygonSymbolizer fill="#1d4e89" />
   </Rule>
   <Rule>
     <Filter>([class] = 'sand')</Filter>
-    <BuildingSymbolizer fill="#fbd82b" />
+    <BuildingSymbolizer fill="#fbd82b" height="7" />
     <PolygonSymbolizer fill="#1d4e89" />
   </Rule>
   <Rule>
     <Filter>([class] = 'pitch')</Filter>
-    <BuildingSymbolizer fill="#fbd82b" />
+    <BuildingSymbolizer fill="#fbd82b" height="7" />
     <PolygonSymbolizer fill="#bc243b" />
   </Rule>
   <Rule>
     <Filter>([class] = 'wood')</Filter>
-    <BuildingSymbolizer fill="#fbd82b" />
+    <BuildingSymbolizer fill="#fbd82b" height="7" />
     <PolygonSymbolizer fill="#019875" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
     <Filter>([class] = 'cemetery')</Filter>
-    <BuildingSymbolizer fill="#fbd82b" />
+    <BuildingSymbolizer fill="#fbd82b" height="7" />
     <PolygonPatternSymbolizer file="img/halftone5.svg" />
   </Rule>
   <Rule>
-    <BuildingSymbolizer fill="#fbd82b" />
+    <BuildingSymbolizer fill="#fbd82b" height="7" />
   </Rule>
 </Style>
 <Layer name="building"

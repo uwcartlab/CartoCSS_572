@@ -1,5 +1,6 @@
 #building{
   building-fill: @yellow;
+  building-height: 7;
 }
 
 #landcover[class='scrub']{
