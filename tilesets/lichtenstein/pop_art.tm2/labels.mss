@@ -80,8 +80,8 @@
   shield-transform: scale(.5,.5);
   shield-placement: point;
   shield-size: 12;
-  shield-text-dx: 3;
-  shield-text-dy: 3;
+  //shield-text-dx: 3;
+  //shield-text-dy: 3;
   shield-fill: @white;
   shield-halo-fill: @black;
   shield-halo-radius: 1.25;
