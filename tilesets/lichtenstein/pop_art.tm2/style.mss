@@ -8,6 +8,7 @@
 
 Map {
   background-color: #fff;
+  background-image: url("img/halftone5.svg");
 }
 
 #water {
@@ -24,8 +25,8 @@ Map {
     }
   }
 }
-
-#admin[maritime=0][admin_level<=2]{
+/*
+#admin[maritime=0][admin_level<5]{
   line-color: @red;
   line-cap: round;
   line-join: round;
@@ -36,6 +37,7 @@ Map {
   [zoom>=4]{
     line-width: 1.25; 
   }
+
 }
 
 /*

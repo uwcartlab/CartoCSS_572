@@ -1,3 +1,5 @@
+@halftone: url("img/halftone5.svg");
+
 #building{
   building-fill: @yellow;
   building-height: 7;
@@ -6,19 +8,21 @@
 #landcover[class='scrub']{
   polygon-fill: @green; 
   polygon-opacity: .35;
-  polygon-pattern-file: url("img/halftone5.svg");
+  polygon-pattern-file: @halftone;
   polygon-pattern-comp-op: soft-light;
 }
 
 #landcover[class='snow']{
    polygon-fill: @blue;
    polygon-opacity: .45;
-   polygon-pattern-file: url("img/halftone5.svg");
+   polygon-pattern-file: @halftone;
    polygon-pattern-comp-op: overlay;
+  
 }
 
 #landcover[class='grass']{
    polygon-fill: @green; 
+   polygon-comp-op: multiply;
    polygon-opacity: .5;
 }
 

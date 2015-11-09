@@ -1,3 +1,4 @@
+/*
 #road[zoom>=6] {
   line-join: round;
   line-cap: round;
@@ -35,3 +36,4 @@
 #aeroway {
   polygon-fill: @blue;
 }
+*/

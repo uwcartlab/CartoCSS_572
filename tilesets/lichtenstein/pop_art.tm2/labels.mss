@@ -246,14 +246,14 @@
   }
 }
 
-#poi_label[scalerank<=2][zoom>=12]{
+#poi_label[scalerank<=1][zoom>=12]{
   text-name: "[name_en]";
   text-face-name: @sans_italic;
   text-fill: @black;
   text-size: 12;
   text-halo-radius: 2.5;
   text-halo-fill: @white;
-  text-min-distance: 100;
+  //text-min-distance: 120;
   text-wrap-width: 50;
   text-line-spacing: -4;
 }
